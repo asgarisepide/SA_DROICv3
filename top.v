@@ -1,3 +1,6 @@
+// CPLD Code
+// S Asgari Oct 25 2023
+//
 module top(PhaseA1, Rst, Rst1, Rst2, PhaseC2, DebugP2, DebugP3, PhaseC1, PhaseC2, PhaseC3, PhaseC4, PhaseA2, PhaseA4, Sin1, Sin2, Sin3, Sin4, Sin5, Sin6, Sin7, Sin8, Sin9, Sin10, Sin11, Sin12, Sin14, Sin15, Sin16, Clk1, Clk2, Clk3, Clk4, RS1, RS2, RS3, RS4, RS5, RS6, RS7, RS8, ADMode_1, ADMode_2, ADMode_3,  ADMode1_1, ADMode1_2, ADMode1_3, ADRst1, ADRst2, ADRst3, ADClk1, ADClk2, ADClk3, ADSout1, ADSout2, ADSout3, ADSout4, ADSout5, ADSout6, ADSout7, ADSout8,AD0, AD1,ADSout15, Sout1,Sout2, Sout3,Sout4,ClkOut, DataOut, ResCS1, ResCS2, ResCS3, ResCS4,ResCS5, ResCS6, ResCS7, ResCS8, ResClk, ResSDI1, ResSDI2, OSC_in);
 	output reg PhaseA1, Rst, DebugP2, DebugP3, PhaseC1;
 	output wire PhaseC4, PhaseC2, PhaseC3;
