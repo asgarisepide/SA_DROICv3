@@ -1,0 +1,83 @@
+m255
+K4
+z2
+!s11f vlog 2020.3 2020.10, Oct 14 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Abel/Documents/DiamondProject/heeloworld1
+vslow_counter
+Z0 !s110 1683228181
+!i10b 1
+!s100 >fD:hJo6^7cSbClJbz;L60
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IJz<c_[NKV2@a1LB>oGSJn3
+Z2 dC:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/heeloworld1
+Z3 w1659904774
+Z4 8C:/Users/Abel/Documents/DiamondProject/heeloworld1/top.v
+Z5 FC:/Users/Abel/Documents/DiamondProject/heeloworld1/top.v
+!i122 8
+L0 13 24
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OT;L;2020.3;71
+r1
+!s85 0
+31
+Z8 !s108 1683228181.000000
+Z9 !s107 C:/Users/Abel/Documents/DiamondProject/heeloworld1/top.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Abel/Documents/DiamondProject/heeloworld1/top.v|
+!s101 -O0
+!i113 1
+Z11 o-work work -O0
+Z12 tCvgOpt 0
+vtop
+R0
+!i10b 1
+!s100 ;8[=]h1CE^=E]aa8b=6gz3
+R1
+I=i>Zl^4?AIiFl9PP4DU<b3
+R2
+R3
+R4
+R5
+!i122 8
+L0 1 11
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+R12
+vtoptest
+R0
+!i10b 1
+!s100 K3ChFKG<hB0KhG0YJFYlR3
+R1
+I]O72?UC8GJC@?j8PLEJ;O3
+R2
+w1659916301
+8C:\Users\Abel\Documents\DiamondProject\heeloworld1\toptest.v
+FC:\Users\Abel\Documents\DiamondProject\heeloworld1\toptest.v
+!i122 9
+L0 3 19
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:\Users\Abel\Documents\DiamondProject\heeloworld1\toptest.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Abel\Documents\DiamondProject\heeloworld1\toptest.v|
+!s101 -O0
+!i113 1
+R11
+R12

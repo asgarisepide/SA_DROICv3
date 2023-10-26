@@ -1,0 +1,18 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     202.00        100.0
+                                  LUT4	     327.00        100.0
+                                 IOBUF	         74        100.0
+                                PFUREG	         76        100.0
+                                RIPPLE	         38        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                  pll1	          1         0.0
+---------------------------------------------------
+Report for cell pll1
+   Instance path: top/p
+                     Cell usage:
+                                  cell	      count    Res Usage(%)

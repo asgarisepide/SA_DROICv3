@@ -1,0 +1,6 @@
+#Start recording tcl command: 8/23/2023 14:09:09
+#Project Location: C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead; Project name: helloworld1
+prj_project open "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.ldf"
+pgr_project close
+prj_project close
+#Stop recording: 8/23/2023 14:13:15

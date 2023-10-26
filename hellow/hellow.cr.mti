@@ -1,0 +1,8 @@
+C:/Users/Abel/Documents/DiamondProject/toptest.v {1 {vlog -work work -stats=none C:/Users/Abel/Documents/DiamondProject/toptest.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+-- Compiling module toptest
+
+Top level modules:
+	toptest
+
+} {} {}}

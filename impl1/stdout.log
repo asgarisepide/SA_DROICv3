@@ -1,0 +1,18 @@
+Running in Lattice mode
+
+Starting:    C:\lscc\diamond\3.12\synpbase\bin64\mbin\synplify.exe
+Install:     C:\lscc\diamond\3.12\synpbase
+Hostname:    DESKTOP-3KQ1DAP
+Date:        Wed Sep 27 18:13:04 2023
+Version:     Q-2020.03L-SP1
+
+Arguments:   -product synplify_pro -tcl C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/impl1/launch_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+
+No project opened.
+TCL script complete: "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/impl1/launch_synplify.tcl"
+exit status=0

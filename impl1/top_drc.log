@@ -1,0 +1,30 @@
+Results of NGD DRC are available in top_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'ADSout1' has no load.
+WARNING - synthesis: input pad net 'ADSout1' has no legal load.
+WARNING - synthesis: logical net 'ADSout2' has no load.
+WARNING - synthesis: input pad net 'ADSout2' has no legal load.
+WARNING - synthesis: logical net 'ADSout3' has no load.
+WARNING - synthesis: input pad net 'ADSout3' has no legal load.
+WARNING - synthesis: logical net 'ADSout4' has no load.
+WARNING - synthesis: input pad net 'ADSout4' has no legal load.
+WARNING - synthesis: logical net 'ADSout5' has no load.
+WARNING - synthesis: input pad net 'ADSout5' has no legal load.
+WARNING - synthesis: logical net 'ADSout6' has no load.
+WARNING - synthesis: input pad net 'ADSout6' has no legal load.
+WARNING - synthesis: logical net 'ADSout15' has no load.
+WARNING - synthesis: input pad net 'ADSout15' has no legal load.
+WARNING - synthesis: DRC complete with 14 warnings.
+
+Design Results:
+    562 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file helloworld1_impl1.ngd.

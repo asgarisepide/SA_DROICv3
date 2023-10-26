@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.3 2020.10, Oct 14 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Abel/Documents/DiamondProject/temp1
+vtop
+Z1 !s110 1665094136
+!i10b 1
+!s100 ?>E=e>2dKaaZY6;]aS0dk1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IH12Y0i_GB]NRKb>CBiRH]0
+R0
+w1665094085
+8C:/Users/Abel/Documents/DiamondProject/top.v
+FC:/Users/Abel/Documents/DiamondProject/top.v
+!i122 0
+L0 1 443
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OT;L;2020.3;71
+r1
+!s85 0
+31
+Z5 !s108 1665094136.000000
+!s107 C:/Users/Abel/Documents/DiamondProject/top.v|
+!s90 -reportprogress|300|+incdir+C:/Users/Abel/Documents/DiamondProject|-work|work|C:/Users/Abel/Documents/DiamondProject/top.v|
+!s101 -O0
+!i113 1
+Z6 o-work work -O0
+Z7 !s92 +incdir+C:/Users/Abel/Documents/DiamondProject -work work -O0
+Z8 tCvgOpt 0
+vtoptest
+R1
+!i10b 1
+!s100 e>?0XDA^=VcEG;Z2oUAVa3
+R2
+I;^:F4C<AeN8C6kHk[?X]o1
+R0
+w1662340920
+8C:/Users/Abel/Documents/DiamondProject/toptest.v
+FC:/Users/Abel/Documents/DiamondProject/toptest.v
+!i122 1
+L0 3 40
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Abel/Documents/DiamondProject/toptest.v|
+!s90 -reportprogress|300|+incdir+C:/Users/Abel/Documents/DiamondProject|-work|work|C:/Users/Abel/Documents/DiamondProject/toptest.v|
+!s101 -O0
+!i113 1
+R6
+R7
+R8

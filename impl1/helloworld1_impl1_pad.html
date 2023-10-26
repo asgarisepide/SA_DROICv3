@@ -1,0 +1,390 @@
+<HTML>
+<HEAD><TITLE>PAD Specification File</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Pad"></A>PAD Specification File
+***************************
+
+PART TYPE:        LCMXO2-640UHC
+Performance Grade:      5
+PACKAGE:          TQFP144
+Package Status:                     Final          Version 1.42
+
+Wed Oct 25 19:13:29 2023
+
+Pinout by Port Name:
++-----------+----------+--------------+-------+-----------+-----------+--------------------------------+
+| Port Name | Pin/Bank | Buffer Type  | Site  | PG Enable | BC Enable | Properties                     |
++-----------+----------+--------------+-------+-----------+-----------+--------------------------------+
+| AD0       | 45/2     | LVCMOS12_OUT | PB6D  |           |           | DRIVE:6mA SLEW:SLOW            |
+| AD1       | 44/2     | LVCMOS12_OUT | PB6C  |           |           | DRIVE:6mA SLEW:SLOW            |
+| ADClk1    | 50/2     | LVCMOS12_OUT | PB9B  |           |           | DRIVE:6mA SLEW:SLOW            |
+| ADClk2    | 1/3      | LVCMOS12_OUT | PL2A  |           |           | DRIVE:6mA SLEW:SLOW            |
+| ADClk3    | 99/1     | LVCMOS12_OUT | PR3B  |           |           | DRIVE:6mA SLEW:SLOW            |
+| ADMode1_1 | 55/2     | LVCMOS12_OUT | PB11A |           |           | DRIVE:6mA SLEW:SLOW            |
+| ADMode1_2 | 95/1     | LVCMOS12_OUT | PR4D  |           |           | DRIVE:6mA SLEW:SLOW            |
+| ADMode1_3 | 96/1     | LVCMOS12_OUT | PR4C  |           |           | DRIVE:6mA SLEW:SLOW            |
+| ADMode_1  | 52/2     | LVCMOS12_OUT | PB11C |           |           | DRIVE:6mA SLEW:SLOW            |
+| ADMode_2  | 39/2     | LVCMOS12_OUT | PB4B  |           |           | DRIVE:6mA SLEW:SLOW            |
+| ADMode_3  | 85/1     | LVCMOS12_OUT | PR8B  |           |           | DRIVE:6mA SLEW:SLOW            |
+| ADRst1    | 43/2     | LVCMOS12_OUT | PB6B  |           |           | DRIVE:6mA SLEW:SLOW            |
+| ADRst2    | 104/1    | LVCMOS12_OUT | PR2D  |           |           | DRIVE:6mA SLEW:SLOW            |
+| ADRst3    | 105/1    | LVCMOS12_OUT | PR2C  |           |           | DRIVE:6mA SLEW:SLOW            |
+| ADSout7   | 54/2     | LVCMOS12_IN  | PB11D |           |           | CLAMP:ON                       |
+| ADSout8   | 71/2     | LVCMOS12_IN  | PB20D |           |           | CLAMP:ON                       |
+| Clk1      | 34/3     | LVCMOS12_OUT | PL10C |           |           | DRIVE:6mA SLEW:SLOW            |
+| Clk2      | 69/2     | LVCMOS12_OUT | PB20B |           |           | DRIVE:6mA SLEW:SLOW            |
+| Clk3      | 32/3     | LVCMOS12_OUT | PL10A |           |           | DRIVE:6mA SLEW:SLOW            |
+| Clk4      | 70/2     | LVCMOS12_OUT | PB20C |           |           | DRIVE:6mA SLEW:SLOW            |
+| ClkOut    | 142/0    | LVCMOS33_OUT | PT9B  |           |           | DRIVE:8mA SLEW:SLOW            |
+| DataOut   | 141/0    | LVCMOS33_OUT | PT9C  |           |           | DRIVE:8mA SLEW:SLOW            |
+| DebugP2   | 106/1    | LVCMOS12_OUT | PR2B  |           |           | DRIVE:6mA SLEW:SLOW            |
+| DebugP3   | 20/3     | LVCMOS12_OUT | PL5B  |           |           | DRIVE:6mA SLEW:SLOW            |
+| OSC_in    | 125/0    | LVCMOS33_IN  | PT12D |           |           | CLAMP:ON HYSTERESIS:SMALL      |
+| PhaseA1   | 42/2     | LVCMOS12_OUT | PB6A  |           |           | DRIVE:6mA SLEW:SLOW            |
+| PhaseA2   | 58/2     | LVCMOS12_OUT | PB15B |           |           | DRIVE:6mA SLEW:SLOW            |
+| PhaseA4   | 59/2     | LVCMOS12_OUT | PB15C |           |           | DRIVE:6mA SLEW:SLOW            |
+| PhaseC1   | 47/2     | LVCMOS12_OUT | PB9C  |           |           | DRIVE:6mA SLEW:SLOW            |
+| PhaseC2   | 48/2     | LVCMOS12_OUT | PB9D  |           |           | DRIVE:6mA SLEW:SLOW            |
+| PhaseC3   | 21/3     | LVCMOS12_OUT | PL5C  |           |           | DRIVE:6mA SLEW:SLOW            |
+| PhaseC4   | 49/2     | LVCMOS12_OUT | PB9A  |           |           | DRIVE:6mA SLEW:SLOW            |
+| RS1       | 28/3     | LVCMOS12_OUT | PL9B  |           |           | DRIVE:6mA SLEW:SLOW            |
+| RS2       | 27/3     | LVCMOS12_OUT | PL9A  |           |           | DRIVE:6mA SLEW:SLOW            |
+| RS3       | 35/3     | LVCMOS12_OUT | PL10D |           |           | DRIVE:6mA SLEW:SLOW            |
+| RS4       | 33/3     | LVCMOS12_OUT | PL10B |           |           | DRIVE:6mA SLEW:SLOW            |
+| RS5       | 83/1     | LVCMOS12_OUT | PR8D  |           |           | DRIVE:6mA SLEW:SLOW            |
+| RS6       | 60/2     | LVCMOS12_OUT | PB15D |           |           | DRIVE:6mA SLEW:SLOW            |
+| RS7       | 61/2     | LVCMOS12_OUT | PB18A |           |           | DRIVE:6mA SLEW:SLOW            |
+| RS8       | 62/2     | LVCMOS12_OUT | PB18B |           |           | DRIVE:6mA SLEW:SLOW            |
+| ResCS1    | 122/0    | LVCMOS33_OUT | PT15A |           |           | DRIVE:8mA SLEW:SLOW            |
+| ResCS2    | 119/0    | LVCMOS33_OUT | PT15D |           |           | DRIVE:8mA SLEW:SLOW            |
+| ResCS3    | 113/0    | LVCMOS33_OUT | PT16D |           |           | DRIVE:8mA SLEW:SLOW            |
+| ResCS4    | 114/0    | LVCMOS33_OUT | PT16C |           |           | DRIVE:8mA SLEW:SLOW            |
+| ResCS5    | 115/0    | LVCMOS33_OUT | PT16B |           |           | DRIVE:8mA SLEW:SLOW            |
+| ResCS6    | 111/0    | LVCMOS33_OUT | PT17B |           |           | DRIVE:8mA SLEW:SLOW            |
+| ResCS7    | 112/0    | LVCMOS33_OUT | PT17A |           |           | DRIVE:8mA SLEW:SLOW            |
+| ResCS8    | 121/0    | LVCMOS33_OUT | PT15B |           |           | DRIVE:8mA SLEW:SLOW            |
+| ResClk    | 109/0    | LVCMOS33_OUT | PT17D |           |           | DRIVE:8mA SLEW:SLOW            |
+| ResSDI1   | 110/0    | LVCMOS33_OUT | PT17C |           |           | DRIVE:8mA SLEW:SLOW            |
+| ResSDI2   | 139/0    | LVCMOS33_OUT | PT10A |           |           | DRIVE:8mA SLEW:SLOW            |
+| Rst       | 56/2     | LVCMOS12_OUT | PB11B |           |           | DRIVE:6mA SLEW:SLOW            |
+| Rst1      | 38/2     | LVCMOS12_OUT | PB4A  |           |           | DRIVE:6mA SLEW:SLOW            |
+| Rst2      | 40/2     | LVCMOS12_OUT | PB4C  |           |           | DRIVE:6mA SLEW:SLOW            |
+| Sin1      | 19/3     | LVCMOS12_OUT | PL5A  |           |           | DRIVE:6mA SLEW:SLOW            |
+| Sin10     | 11/3     | LVCMOS12_OUT | PL4A  |           |           | DRIVE:6mA SLEW:SLOW            |
+| Sin11     | 10/3     | LVCMOS12_OUT | PL3D  |           |           | DRIVE:6mA SLEW:SLOW            |
+| Sin12     | 9/3      | LVCMOS12_OUT | PL3C  |           |           | DRIVE:6mA SLEW:SLOW            |
+| Sin14     | 68/2     | LVCMOS12_OUT | PB20A |           |           | DRIVE:6mA SLEW:SLOW            |
+| Sin15     | 67/2     | LVCMOS12_OUT | PB18D |           |           | DRIVE:6mA SLEW:SLOW            |
+| Sin16     | 65/2     | LVCMOS12_OUT | PB18C |           |           | DRIVE:6mA SLEW:SLOW            |
+| Sin2      | 12/3     | LVCMOS12_OUT | PL4B  |           |           | DRIVE:6mA SLEW:SLOW            |
+| Sin3      | 13/3     | LVCMOS12_OUT | PL4C  |           |           | DRIVE:6mA SLEW:SLOW            |
+| Sin4      | 14/3     | LVCMOS12_OUT | PL4D  |           |           | DRIVE:6mA SLEW:SLOW            |
+| Sin5      | 75/1     | LVCMOS12_OUT | PR10B |           |           | DRIVE:6mA SLEW:SLOW            |
+| Sin6      | 74/1     | LVCMOS12_OUT | PR10C |           |           | DRIVE:6mA SLEW:SLOW            |
+| Sin7      | 77/1     | LVCMOS12_OUT | PR9D  |           |           | DRIVE:6mA SLEW:SLOW            |
+| Sin8      | 76/1     | LVCMOS12_OUT | PR10A |           |           | DRIVE:6mA SLEW:SLOW            |
+| Sin9      | 6/3      | LVCMOS12_OUT | PL3B  |           |           | DRIVE:6mA SLEW:SLOW            |
+| Sout1     | 127/0    | LVCMOS33_OUT | PT12B |           |           | DRIVE:8mA SLEW:SLOW            |
+| Sout2     | 128/0    | LVCMOS33_OUT | PT12A |           |           | DRIVE:8mA SLEW:SLOW            |
+| Sout3     | 132/0    | LVCMOS33_OUT | PT11B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| Sout4     | 133/0    | LVCMOS33_OUT | PT11A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| p1        | 23/3     | LVCMOS12_OUT | PL8A  |           |           | DRIVE:6mA SLEW:SLOW            |
++-----------+----------+--------------+-------+-----------+-----------+--------------------------------+
+
+Vccio by Bank:
++------+-------+
+| Bank | Vccio |
++------+-------+
+| 0    | 3.3V  |
+| 1    | 1.2V  |
+| 2    | 1.2V  |
+| 3    | 1.2V  |
++------+-------+
+
+
+<A name="pad_vref"></A><B><U><big>Vref by Bank:</big></U></B>
++------+-----+-----------------+---------+
+| Vref | Pin | Bank # / Vref # | Load(s) |
++------+-----+-----------------+---------+
++------+-----+-----------------+---------+
+
+<A name="pad_pin"></A><B><U><big>Pinout by Pin Number:</big></U></B>
++----------+-----------------------+------------+--------------+-------+---------------+-----------+-----------+
+| Pin/Bank | Pin Info              | Preference | Buffer Type  | Site  | Dual Function | PG Enable | BC Enable |
++----------+-----------------------+------------+--------------+-------+---------------+-----------+-----------+
+| 1/3      | ADClk2                | LOCATED    | LVCMOS12_OUT | PL2A  | L_GPLLT_FB    |           |           |
+| 2/3      |     unused, PULL:DOWN |            |              | PL2B  | L_GPLLC_FB    |           |           |
+| 3/3      |     unused, PULL:DOWN |            |              | PL2C  | L_GPLLT_IN    |           |           |
+| 4/3      |     unused, PULL:DOWN |            |              | PL2D  | L_GPLLC_IN    |           |           |
+| 5/3      |     unused, PULL:DOWN |            |              | PL3A  | PCLKT3_2      |           |           |
+| 6/3      | Sin9                  | LOCATED    | LVCMOS12_OUT | PL3B  | PCLKC3_2      |           |           |
+| 9/3      | Sin12                 | LOCATED    | LVCMOS12_OUT | PL3C  |               |           |           |
+| 10/3     | Sin11                 | LOCATED    | LVCMOS12_OUT | PL3D  |               |           |           |
+| 11/3     | Sin10                 | LOCATED    | LVCMOS12_OUT | PL4A  |               |           |           |
+| 12/3     | Sin2                  | LOCATED    | LVCMOS12_OUT | PL4B  |               |           |           |
+| 13/3     | Sin3                  | LOCATED    | LVCMOS12_OUT | PL4C  |               |           |           |
+| 14/3     | Sin4                  | LOCATED    | LVCMOS12_OUT | PL4D  |               |           |           |
+| 19/3     | Sin1                  | LOCATED    | LVCMOS12_OUT | PL5A  | PCLKT3_1      |           |           |
+| 20/3     | DebugP3               | LOCATED    | LVCMOS12_OUT | PL5B  | PCLKC3_1      |           |           |
+| 21/3     | PhaseC3               | LOCATED    | LVCMOS12_OUT | PL5C  |               |           |           |
+| 22/3     |     unused, PULL:DOWN |            |              | PL5D  |               |           |           |
+| 23/3     | p1                    |            | LVCMOS12_OUT | PL8A  |               |           |           |
+| 24/3     |     unused, PULL:DOWN |            |              | PL8B  |               |           |           |
+| 25/3     |     unused, PULL:DOWN |            |              | PL8C  |               |           |           |
+| 26/3     |     unused, PULL:DOWN |            |              | PL8D  |               |           |           |
+| 27/3     | RS2                   | LOCATED    | LVCMOS12_OUT | PL9A  | PCLKT3_0      |           |           |
+| 28/3     | RS1                   | LOCATED    | LVCMOS12_OUT | PL9B  | PCLKC3_0      |           |           |
+| 32/3     | Clk3                  | LOCATED    | LVCMOS12_OUT | PL10A |               |           |           |
+| 33/3     | RS4                   | LOCATED    | LVCMOS12_OUT | PL10B |               |           |           |
+| 34/3     | Clk1                  | LOCATED    | LVCMOS12_OUT | PL10C |               |           |           |
+| 35/3     | RS3                   | LOCATED    | LVCMOS12_OUT | PL10D |               |           |           |
+| 38/2     | Rst1                  | LOCATED    | LVCMOS12_OUT | PB4A  |               |           |           |
+| 39/2     | ADMode_2              | LOCATED    | LVCMOS12_OUT | PB4B  |               |           |           |
+| 40/2     | Rst2                  | LOCATED    | LVCMOS12_OUT | PB4C  | CSSPIN        |           |           |
+| 41/2     |     unused, PULL:DOWN |            |              | PB4D  |               |           |           |
+| 42/2     | PhaseA1               | LOCATED    | LVCMOS12_OUT | PB6A  |               |           |           |
+| 43/2     | ADRst1                | LOCATED    | LVCMOS12_OUT | PB6B  |               |           |           |
+| 44/2     | AD1                   | LOCATED    | LVCMOS12_OUT | PB6C  | MCLK/CCLK     |           |           |
+| 45/2     | AD0                   | LOCATED    | LVCMOS12_OUT | PB6D  | SO/SPISO      |           |           |
+| 47/2     | PhaseC1               | LOCATED    | LVCMOS12_OUT | PB9C  |               |           |           |
+| 48/2     | PhaseC2               | LOCATED    | LVCMOS12_OUT | PB9D  |               |           |           |
+| 49/2     | PhaseC4               | LOCATED    | LVCMOS12_OUT | PB9A  | PCLKT2_0      |           |           |
+| 50/2     | ADClk1                | LOCATED    | LVCMOS12_OUT | PB9B  | PCLKC2_0      |           |           |
+| 52/2     | ADMode_1              | LOCATED    | LVCMOS12_OUT | PB11C |               |           |           |
+| 54/2     | ADSout7               | LOCATED    | LVCMOS12_IN  | PB11D |               |           |           |
+| 55/2     | ADMode1_1             | LOCATED    | LVCMOS12_OUT | PB11A | PCLKT2_1      |           |           |
+| 56/2     | Rst                   | LOCATED    | LVCMOS12_OUT | PB11B | PCLKC2_1      |           |           |
+| 57/2     |     unused, PULL:DOWN |            |              | PB15A |               |           |           |
+| 58/2     | PhaseA2               | LOCATED    | LVCMOS12_OUT | PB15B |               |           |           |
+| 59/2     | PhaseA4               | LOCATED    | LVCMOS12_OUT | PB15C |               |           |           |
+| 60/2     | RS6                   | LOCATED    | LVCMOS12_OUT | PB15D |               |           |           |
+| 61/2     | RS7                   | LOCATED    | LVCMOS12_OUT | PB18A |               |           |           |
+| 62/2     | RS8                   | LOCATED    | LVCMOS12_OUT | PB18B |               |           |           |
+| 65/2     | Sin16                 | LOCATED    | LVCMOS12_OUT | PB18C |               |           |           |
+| 67/2     | Sin15                 | LOCATED    | LVCMOS12_OUT | PB18D |               |           |           |
+| 68/2     | Sin14                 | LOCATED    | LVCMOS12_OUT | PB20A |               |           |           |
+| 69/2     | Clk2                  | LOCATED    | LVCMOS12_OUT | PB20B |               |           |           |
+| 70/2     | Clk4                  | LOCATED    | LVCMOS12_OUT | PB20C | SN            |           |           |
+| 71/2     | ADSout8               | LOCATED    | LVCMOS12_IN  | PB20D | SI/SISPI      |           |           |
+| 73/1     |     unused, PULL:DOWN |            |              | PR10D | DQ1           |           |           |
+| 74/1     | Sin6                  | LOCATED    | LVCMOS12_OUT | PR10C | DQ1           |           |           |
+| 75/1     | Sin5                  | LOCATED    | LVCMOS12_OUT | PR10B | DQ1           |           |           |
+| 76/1     | Sin8                  | LOCATED    | LVCMOS12_OUT | PR10A | DQ1           |           |           |
+| 77/1     | Sin7                  | LOCATED    | LVCMOS12_OUT | PR9D  | DQ1           |           |           |
+| 78/1     |     unused, PULL:DOWN |            |              | PR9C  | DQ1           |           |           |
+| 81/1     |     unused, PULL:DOWN |            |              | PR9B  | DQ1           |           |           |
+| 82/1     |     unused, PULL:DOWN |            |              | PR9A  | DQ1           |           |           |
+| 83/1     | RS5                   | LOCATED    | LVCMOS12_OUT | PR8D  | DQ1           |           |           |
+| 84/1     |     unused, PULL:DOWN |            |              | PR8C  | DQ1           |           |           |
+| 85/1     | ADMode_3              | LOCATED    | LVCMOS12_OUT | PR8B  | DQS1N         |           |           |
+| 86/1     |     unused, PULL:DOWN |            |              | PR8A  | DQS1          |           |           |
+| 91/1     |     unused, PULL:DOWN |            |              | PR5D  | PCLKC1_0/DQ0  |           |           |
+| 92/1     |     unused, PULL:DOWN |            |              | PR5C  | PCLKT1_0/DQ0  |           |           |
+| 93/1     |     unused, PULL:DOWN |            |              | PR5B  | DQS0N         |           |           |
+| 94/1     |     unused, PULL:DOWN |            |              | PR5A  | DQS0          |           |           |
+| 95/1     | ADMode1_2             | LOCATED    | LVCMOS12_OUT | PR4D  | DQ0           |           |           |
+| 96/1     | ADMode1_3             | LOCATED    | LVCMOS12_OUT | PR4C  | DQ0           |           |           |
+| 97/1     |     unused, PULL:DOWN |            |              | PR4B  | DQ0           |           |           |
+| 98/1     |     unused, PULL:DOWN |            |              | PR4A  | DQ0           |           |           |
+| 99/1     | ADClk3                | LOCATED    | LVCMOS12_OUT | PR3B  | DQ0           |           |           |
+| 100/1    |     unused, PULL:DOWN |            |              | PR3A  | DQ0           |           |           |
+| 104/1    | ADRst2                | LOCATED    | LVCMOS12_OUT | PR2D  | DQ0           |           |           |
+| 105/1    | ADRst3                | LOCATED    | LVCMOS12_OUT | PR2C  | DQ0           |           |           |
+| 106/1    | DebugP2               | LOCATED    | LVCMOS12_OUT | PR2B  | DQ0           |           |           |
+| 107/1    |     unused, PULL:DOWN |            |              | PR2A  | DQ0           |           |           |
+| 109/0    | ResClk                | LOCATED    | LVCMOS33_OUT | PT17D | DONE          |           |           |
+| 110/0    | ResSDI1               | LOCATED    | LVCMOS33_OUT | PT17C | INITN         |           |           |
+| 111/0    | ResCS6                | LOCATED    | LVCMOS33_OUT | PT17B |               |           |           |
+| 112/0    | ResCS7                | LOCATED    | LVCMOS33_OUT | PT17A |               |           |           |
+| 113/0    | ResCS3                | LOCATED    | LVCMOS33_OUT | PT16D |               |           |           |
+| 114/0    | ResCS4                | LOCATED    | LVCMOS33_OUT | PT16C |               |           |           |
+| 115/0    | ResCS5                | LOCATED    | LVCMOS33_OUT | PT16B |               |           |           |
+| 117/0    |     unused, PULL:DOWN |            |              | PT16A |               |           |           |
+| 119/0    | ResCS2                | LOCATED    | LVCMOS33_OUT | PT15D | PROGRAMN      |           |           |
+| 120/0    |     unused, PULL:DOWN |            |              | PT15C | JTAGENB       |           |           |
+| 121/0    | ResCS8                | LOCATED    | LVCMOS33_OUT | PT15B |               |           |           |
+| 122/0    | ResCS1                | LOCATED    | LVCMOS33_OUT | PT15A |               |           |           |
+| 125/0    | OSC_in                | LOCATED    | LVCMOS33_IN  | PT12D | SDA/PCLKC0_0  |           |           |
+| 126/0    |     unused, PULL:DOWN |            |              | PT12C | SCL/PCLKT0_0  |           |           |
+| 127/0    | Sout1                 | LOCATED    | LVCMOS33_OUT | PT12B | PCLKC0_1      |           |           |
+| 128/0    | Sout2                 | LOCATED    | LVCMOS33_OUT | PT12A | PCLKT0_1      |           |           |
+| 130/0    | Reserved: sysCONFIG   |            |              | PT11D | TMS           |           |           |
+| 131/0    | Reserved: sysCONFIG   |            |              | PT11C | TCK           |           |           |
+| 132/0    | Sout3                 | LOCATED    | LVCMOS33_OUT | PT11B |               |           |           |
+| 133/0    | Sout4                 | LOCATED    | LVCMOS33_OUT | PT11A |               |           |           |
+| 136/0    | Reserved: sysCONFIG   |            |              | PT10D | TDI           |           |           |
+| 137/0    | Reserved: sysCONFIG   |            |              | PT10C | TDO           |           |           |
+| 138/0    |     unused, PULL:DOWN |            |              | PT10B |               |           |           |
+| 139/0    | ResSDI2               | LOCATED    | LVCMOS33_OUT | PT10A |               |           |           |
+| 140/0    |     unused, PULL:DOWN |            |              | PT9D  |               |           |           |
+| 141/0    | DataOut               | LOCATED    | LVCMOS33_OUT | PT9C  |               |           |           |
+| 142/0    | ClkOut                | LOCATED    | LVCMOS33_OUT | PT9B  |               |           |           |
+| 143/0    |     unused, PULL:DOWN |            |              | PT9A  |               |           |           |
++----------+-----------------------+------------+--------------+-------+---------------+-----------+-----------+
+
+sysCONFIG Pins:
++----------+--------------------+--------------------+----------+-------------+-------------------+
+| Pad Name | sysCONFIG Pin Name | sysCONFIG Settings | Pin/Bank | Buffer Type | Config Pull Mode  |
++----------+--------------------+--------------------+----------+-------------+-------------------+
+| PT11D    | TMS                | JTAG_PORT=ENABLE   | 130/0    |             | PULLUP            |
+| PT11C    | TCK/TEST_CLK       | JTAG_PORT=ENABLE   | 131/0    |             | NO pull up/down   |
+| PT10D    | TDI/MD7            | JTAG_PORT=ENABLE   | 136/0    |             | PULLUP            |
+| PT10C    | TDO                | JTAG_PORT=ENABLE   | 137/0    |             | PULLUP            |
++----------+--------------------+--------------------+----------+-------------+-------------------+
+
+Dedicated sysCONFIG Pins:
+
+
+List of All Pins' Locate Preferences Based on Final Placement After PAR 
+to Help Users Lock Down ALL the Pins Easily (by Simply Copy & Paste): 
+
+LOCATE  COMP  "AD0"  SITE  "45";
+LOCATE  COMP  "AD1"  SITE  "44";
+LOCATE  COMP  "ADClk1"  SITE  "50";
+LOCATE  COMP  "ADClk2"  SITE  "1";
+LOCATE  COMP  "ADClk3"  SITE  "99";
+LOCATE  COMP  "ADMode1_1"  SITE  "55";
+LOCATE  COMP  "ADMode1_2"  SITE  "95";
+LOCATE  COMP  "ADMode1_3"  SITE  "96";
+LOCATE  COMP  "ADMode_1"  SITE  "52";
+LOCATE  COMP  "ADMode_2"  SITE  "39";
+LOCATE  COMP  "ADMode_3"  SITE  "85";
+LOCATE  COMP  "ADRst1"  SITE  "43";
+LOCATE  COMP  "ADRst2"  SITE  "104";
+LOCATE  COMP  "ADRst3"  SITE  "105";
+LOCATE  COMP  "ADSout7"  SITE  "54";
+LOCATE  COMP  "ADSout8"  SITE  "71";
+LOCATE  COMP  "Clk1"  SITE  "34";
+LOCATE  COMP  "Clk2"  SITE  "69";
+LOCATE  COMP  "Clk3"  SITE  "32";
+LOCATE  COMP  "Clk4"  SITE  "70";
+LOCATE  COMP  "ClkOut"  SITE  "142";
+LOCATE  COMP  "DataOut"  SITE  "141";
+LOCATE  COMP  "DebugP2"  SITE  "106";
+LOCATE  COMP  "DebugP3"  SITE  "20";
+LOCATE  COMP  "OSC_in"  SITE  "125";
+LOCATE  COMP  "PhaseA1"  SITE  "42";
+LOCATE  COMP  "PhaseA2"  SITE  "58";
+LOCATE  COMP  "PhaseA4"  SITE  "59";
+LOCATE  COMP  "PhaseC1"  SITE  "47";
+LOCATE  COMP  "PhaseC2"  SITE  "48";
+LOCATE  COMP  "PhaseC3"  SITE  "21";
+LOCATE  COMP  "PhaseC4"  SITE  "49";
+LOCATE  COMP  "RS1"  SITE  "28";
+LOCATE  COMP  "RS2"  SITE  "27";
+LOCATE  COMP  "RS3"  SITE  "35";
+LOCATE  COMP  "RS4"  SITE  "33";
+LOCATE  COMP  "RS5"  SITE  "83";
+LOCATE  COMP  "RS6"  SITE  "60";
+LOCATE  COMP  "RS7"  SITE  "61";
+LOCATE  COMP  "RS8"  SITE  "62";
+LOCATE  COMP  "ResCS1"  SITE  "122";
+LOCATE  COMP  "ResCS2"  SITE  "119";
+LOCATE  COMP  "ResCS3"  SITE  "113";
+LOCATE  COMP  "ResCS4"  SITE  "114";
+LOCATE  COMP  "ResCS5"  SITE  "115";
+LOCATE  COMP  "ResCS6"  SITE  "111";
+LOCATE  COMP  "ResCS7"  SITE  "112";
+LOCATE  COMP  "ResCS8"  SITE  "121";
+LOCATE  COMP  "ResClk"  SITE  "109";
+LOCATE  COMP  "ResSDI1"  SITE  "110";
+LOCATE  COMP  "ResSDI2"  SITE  "139";
+LOCATE  COMP  "Rst"  SITE  "56";
+LOCATE  COMP  "Rst1"  SITE  "38";
+LOCATE  COMP  "Rst2"  SITE  "40";
+LOCATE  COMP  "Sin1"  SITE  "19";
+LOCATE  COMP  "Sin10"  SITE  "11";
+LOCATE  COMP  "Sin11"  SITE  "10";
+LOCATE  COMP  "Sin12"  SITE  "9";
+LOCATE  COMP  "Sin14"  SITE  "68";
+LOCATE  COMP  "Sin15"  SITE  "67";
+LOCATE  COMP  "Sin16"  SITE  "65";
+LOCATE  COMP  "Sin2"  SITE  "12";
+LOCATE  COMP  "Sin3"  SITE  "13";
+LOCATE  COMP  "Sin4"  SITE  "14";
+LOCATE  COMP  "Sin5"  SITE  "75";
+LOCATE  COMP  "Sin6"  SITE  "74";
+LOCATE  COMP  "Sin7"  SITE  "77";
+LOCATE  COMP  "Sin8"  SITE  "76";
+LOCATE  COMP  "Sin9"  SITE  "6";
+LOCATE  COMP  "Sout1"  SITE  "127";
+LOCATE  COMP  "Sout2"  SITE  "128";
+LOCATE  COMP  "Sout3"  SITE  "132";
+LOCATE  COMP  "Sout4"  SITE  "133";
+LOCATE  COMP  "p1"  SITE  "23";
+
+#PLL
+LOCATE  COMP  "p/PLLInst_0"  SITE  "LPLL" ;
+
+
+
+
+PAR: Place And Route Diamond (64-bit) 3.12.0.240.2.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Oct 25 19:13:31 2023
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

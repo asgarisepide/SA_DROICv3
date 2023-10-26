@@ -1,0 +1,16 @@
+#Start recording tcl command: 5/11/2023 10:20:55
+#Project Location: C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead; Project name: test_MS
+prj_project open "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/test_MS.ldf"
+prj_run Export -impl impl1
+pgr_project open "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/impl1/impl1.xcf"
+pgr_project save "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/impl1/impl1.xcf"
+pgr_project close
+pgr_project open "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/impl1/impl1.xcf"
+pgr_project close
+pgr_project open "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/impl1/impl1.xcf"
+pgr_project close
+pgr_project open "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/impl1/impl1.xcf"
+pgr_program run
+pgr_program run
+prj_project close
+#Stop recording: 5/11/2023 10:42:43

@@ -1,0 +1,164 @@
+<HTML>
+<HEAD><TITLE>I/O Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Top"></A><B><U><big>I/O Timing Report</big></U></B>
+Loading design for application iotiming from file helloworld1_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-640UHC
+Package:     TQFP144
+Performance: 6
+Package Status:                     Final          Version 1.42.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file helloworld1_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-640UHC
+Package:     TQFP144
+Performance: M
+Package Status:                     Final          Version 1.42.
+Performance Hardware Data Status:   Final          Version 34.4.
+// Design: top
+// Package: TQFP144
+// ncd File: helloworld1_impl1.ncd
+// Version: Diamond (64-bit) 3.12.0.240.2
+// Written on Sat Oct 14 17:45:33 2023
+// M: Minimum Performance Grade
+// iotiming helloworld1_impl1.ncd helloworld1_impl1.prf -gui -msgset C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/promote.xml
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5):
+
+// Input Setup and Hold Times
+
+Port    Clock  Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+ADSout8 OSC_in F     2.203      5      -0.035     M
+
+
+// Clock to Output Delay
+
+Port      Clock  Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+ADClk1    OSC_in F    13.232         5        3.284          M
+ADClk2    OSC_in F    13.701         5        3.372          M
+ADClk3    OSC_in F    13.746         5        3.418          M
+ADMode1_1 OSC_in F    12.790         5        3.136          M
+ADMode1_2 OSC_in F    14.232         5        3.558          M
+ADMode1_3 OSC_in F    14.232         5        3.558          M
+ADMode_1  OSC_in F    13.221         5        3.282          M
+ADMode_2  OSC_in F    13.663         5        3.422          M
+ADMode_3  OSC_in F    13.261         5        3.266          M
+ADRst1    OSC_in F    13.304         5        3.308          M
+ADRst2    OSC_in F    13.861         5        3.456          M
+ADRst3    OSC_in F    13.861         5        3.456          M
+Clk1      OSC_in F    15.281         5        3.805          M
+Clk2      OSC_in F    14.915         5        3.706          M
+Clk3      OSC_in F    14.902         5        3.700          M
+Clk4      OSC_in F    14.915         5        3.706          M
+ClkOut    OSC_in F     8.349         5        2.644          M
+DataOut   OSC_in F     9.310         5        2.914          M
+PhaseA1   OSC_in F    13.066         5        3.219          M
+PhaseA2   OSC_in F    13.598         5        3.388          M
+PhaseA4   OSC_in F    13.598         5        3.388          M
+PhaseC1   OSC_in F    12.804         5        3.142          M
+PhaseC2   OSC_in F    12.804         5        3.142          M
+PhaseC3   OSC_in F    13.822         5        3.416          M
+PhaseC4   OSC_in F    13.147         5        3.251          M
+RS1       OSC_in F    14.451         5        3.663          M
+RS2       OSC_in F    14.087         5        3.554          M
+RS3       OSC_in F    13.672         5        3.407          M
+RS5       OSC_in F    13.156         5        3.241          M
+RS6       OSC_in F    13.214         5        3.280          M
+RS7       OSC_in F    13.304         5        3.308          M
+ResCS7    OSC_in F     8.326         5        2.637          M
+ResClk    OSC_in F    10.547         5        3.199          M
+ResSDI1   OSC_in F     8.911         5        2.811          M
+ResSDI2   OSC_in F     8.974         5        2.846          M
+Rst       OSC_in F    13.066         5        3.219          M
+Rst1      OSC_in F    13.248         5        3.276          M
+Rst2      OSC_in F    13.598         5        3.388          M
+Sin1      OSC_in F    14.633         5        3.671          M
+Sin10     OSC_in F    14.633         5        3.671          M
+Sin11     OSC_in F    14.241         5        3.560          M
+Sin12     OSC_in F    14.241         5        3.560          M
+Sin14     OSC_in F    13.598         5        3.388          M
+Sin15     OSC_in F    13.233         5        3.287          M
+Sin16     OSC_in F    13.233         5        3.287          M
+Sin2      OSC_in F    15.025         5        3.781          M
+Sin3      OSC_in F    15.025         5        3.781          M
+Sin4      OSC_in F    15.025         5        3.781          M
+Sin5      OSC_in F    13.653         5        3.377          M
+Sin6      OSC_in F    13.653         5        3.377          M
+Sin7      OSC_in F    13.261         5        3.267          M
+Sin8      OSC_in F    13.653         5        3.377          M
+Sin9      OSC_in F    14.241         5        3.560          M
+Sout1     OSC_in F     8.349         5        2.644          M
+Sout2     OSC_in F    14.260         5        3.096          M
+Sout3     OSC_in F    10.648         5        3.012          M
+Sout4     OSC_in F    12.903         5        3.220          M
+p1        OSC_in F    13.618         5        3.375          M
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

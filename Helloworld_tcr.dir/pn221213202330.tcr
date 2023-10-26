@@ -1,0 +1,13 @@
+#Start recording tcl command: 12/13/2022 20:21:29
+#Project Location: C:/Users/Abel/Documents/DiamondProject1; Project name: Helloworld
+C:/Users/Abel/Documents/DiamondProject1
+helloworld1
+#Start recording tcl command: 12/13/2022 20:23:30
+#Project Location: C:/Users/Abel/Documents/DiamondProject1; Project name: helloworld1
+prj_project open "C:/Users/Abel/Documents/DiamondProject1/Helloworld.ldf"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_project save
+prj_project close
+prj_project open "C:/Users/Abel/Documents/DiamondProject1/helloworld1.ldf"
+#Stop recording: 12/13/2022 20:23:30

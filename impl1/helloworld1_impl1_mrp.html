@@ -1,0 +1,602 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+             Lattice Mapping Report File for Design Module 'top'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-640UHC -t TQFP144 -s 5 -oc Commercial
+     helloworld1_impl1.ngd -o helloworld1_impl1_map.ncd -pr
+     helloworld1_impl1.prf -mp helloworld1_impl1.mrp -lpf C:/Users/Abel/Document
+     s/CPLDOSCReadoutMultiRead/impl1/helloworld1_impl1.lpf -lpf
+     C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf -c 0 -gui
+     -msgset C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-640UHCTQFP144
+Target Performance:   5
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.12.0.240.2
+Mapped on:  10/25/23  19:12:29
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:     76 out of   964 (8%)
+      PFU registers:           76 out of   640 (12%)
+      PIO registers:            0 out of   324 (0%)
+   Number of SLICEs:       202 out of   320 (63%)
+      SLICEs as Logic/ROM:    202 out of   320 (63%)
+      SLICEs as RAM:            0 out of   240 (0%)
+      SLICEs as Carry:         38 out of   320 (12%)
+   Number of LUT4s:        403 out of   640 (63%)
+      Number used as logic LUTs:        327
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       76
+      Number used as shift registers:     0
+   Number of PIO sites used: 74 + 4(JTAG) out of 108 (72%)
+   Number of block RAMs:  0 out of 7 (0%)
+   Number of GSRs:        0 out of 1 (0%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 1 (100%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net clk_out1: 56 loads, 1 rising, 55 falling (Driver: p/PLLInst_0 )
+     Net OSC_in_c: 1 loads, 1 rising, 0 falling (Driver: PIO OSC_in )
+
+   Number of Clock Enables:  7
+     Net clk_out1_N_7_enable_14: 3 loads, 3 LSLICEs
+     Net clk_out1_N_7_enable_23: 2 loads, 2 LSLICEs
+     Net clk_out1_N_7_enable_19: 3 loads, 3 LSLICEs
+     Net clk_out1_N_7_enable_26: 4 loads, 4 LSLICEs
+     Net clk_out1_N_7_enable_7: 2 loads, 2 LSLICEs
+     Net clk_out1_N_7_enable_10: 3 loads, 3 LSLICEs
+     Net clk_out1_N_7_enable_20: 1 loads, 1 LSLICEs
+   Number of LSRs:  7
+     Net n3657: 3 loads, 3 LSLICEs
+     Net n2784: 3 loads, 3 LSLICEs
+     Net n6506: 2 loads, 2 LSLICEs
+     Net count_0: 2 loads, 2 LSLICEs
+     Net state_4_N_95_0: 1 loads, 1 LSLICEs
+     Net n3455: 4 loads, 4 LSLICEs
+     Net n6511: 2 loads, 2 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net state_1: 99 loads
+     Net state_0: 79 loads
+     Net state_3: 78 loads
+     Net state_2: 77 loads
+     Net state_4_N_80_1: 36 loads
+     Net state_4_N_110_0: 34 loads
+     Net n19: 32 loads
+     Net n5596: 32 loads
+     Net n63_adj_646: 32 loads
+     Net n7: 32 loads
+
+
+
+
+   Number of warnings:  20
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map:
+     C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf(113):
+     Semantic error in "IOBUF PORT "ADSout6" PULLMODE=NONE IO_TYPE=LVCMOS12 ;":
+     Port "ADSout6" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf(114):
+     Semantic error in "IOBUF PORT "ADSout5" PULLMODE=NONE IO_TYPE=LVCMOS12 ;":
+     Port "ADSout5" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf(115):
+     Semantic error in "IOBUF PORT "ADSout4" PULLMODE=NONE IO_TYPE=LVCMOS12 ;":
+     Port "ADSout4" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf(116):
+
+     Semantic error in "IOBUF PORT "ADSout3" PULLMODE=NONE IO_TYPE=LVCMOS12 ;":
+     Port "ADSout3" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf(117):
+     Semantic error in "IOBUF PORT "ADSout2" PULLMODE=NONE IO_TYPE=LVCMOS12 ;":
+     Port "ADSout2" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf(118):
+     Semantic error in "IOBUF PORT "ADSout1" PULLMODE=NONE IO_TYPE=LVCMOS12 ;":
+     Port "ADSout1" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: input pad net 'ADSout1' has no legal load.
+WARNING - map: input pad net 'ADSout2' has no legal load.
+WARNING - map: input pad net 'ADSout3' has no legal load.
+WARNING - map: input pad net 'ADSout4' has no legal load.
+WARNING - map: input pad net 'ADSout5' has no legal load.
+WARNING - map: input pad net 'ADSout6' has no legal load.
+WARNING - map: input pad net 'ADSout15' has no legal load.
+WARNING - map: IO buffer missing for top level port ADSout1...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port ADSout2...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port ADSout3...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port ADSout4...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port ADSout5...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port ADSout6...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port ADSout15...logic will be
+     discarded.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| Clk3                | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| ADClk1              | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Clk2                | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Clk1                | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| RS4                 | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| RS3                 | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Sin16               | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+
+| Rst1                | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Sin15               | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Sin14               | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Sin12               | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Sin11               | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| RS2                 | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| RS1                 | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Sin10               | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Clk4                | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| ADMode_1            | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| RS8                 | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| ADRst3              | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| ADRst2              | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| ADRst1              | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| ADMode1_3           | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| ADMode1_2           | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| ADMode1_1           | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| RS7                 | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Sin9                | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Sin8                | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| ADClk2              | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| ADMode_3            | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Sin7                | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Sin6                | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Sin5                | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| ADClk3              | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Sin4                | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Sin3                | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+
+| Sin2                | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Sin1                | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| PhaseA4             | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| PhaseA2             | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| PhaseC4             | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| PhaseC3             | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| PhaseC2             | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| PhaseC1             | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| DebugP3             | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| DebugP2             | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| p1                  | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| AD0                 | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Rst                 | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| PhaseA1             | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Rst2                | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| RS6                 | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| RS5                 | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| ADMode_2            | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| AD1                 | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| Sout1               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Sout2               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Sout3               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Sout4               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ClkOut              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DataOut             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ResCS1              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ResCS2              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ResCS3              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+| ResCS4              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ResCS5              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ResCS6              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ResCS7              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ResCS8              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ResClk              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ResSDI1             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ResSDI2             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ADSout7             | INPUT     | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| ADSout8             | INPUT     | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| OSC_in              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal clk_out1_N_7 was merged into signal clk_out1
+Signal n2188 was merged into signal state_3
+Signal n8_adj_633 was merged into signal count_0
+Signal add_2660_7/S1 undriven or does not drive anything - clipped.
+Signal add_2660_7/S0 undriven or does not drive anything - clipped.
+Signal countcur_814_1023_add_4_7/CO undriven or does not drive anything -
+     clipped.
+Signal add_2660_9/S1 undriven or does not drive anything - clipped.
+Signal add_2660_9/S0 undriven or does not drive anything - clipped.
+Signal add_2660_11/S1 undriven or does not drive anything - clipped.
+Signal add_2660_11/S0 undriven or does not drive anything - clipped.
+Signal add_2660_13/S1 undriven or does not drive anything - clipped.
+Signal add_2660_13/S0 undriven or does not drive anything - clipped.
+Signal add_2660_15/S1 undriven or does not drive anything - clipped.
+Signal add_2660_15/S0 undriven or does not drive anything - clipped.
+Signal add_2660_17/S1 undriven or does not drive anything - clipped.
+Signal add_2660_17/S0 undriven or does not drive anything - clipped.
+Signal add_2660_19/S1 undriven or does not drive anything - clipped.
+Signal add_2660_19/S0 undriven or does not drive anything - clipped.
+Signal add_2660_21/S1 undriven or does not drive anything - clipped.
+Signal add_2660_21/S0 undriven or does not drive anything - clipped.
+Signal add_2660_23/S1 undriven or does not drive anything - clipped.
+Signal add_2660_23/S0 undriven or does not drive anything - clipped.
+Signal add_2660_25/S1 undriven or does not drive anything - clipped.
+Signal add_2660_25/S0 undriven or does not drive anything - clipped.
+Signal add_2660_27/S1 undriven or does not drive anything - clipped.
+Signal add_2660_27/S0 undriven or does not drive anything - clipped.
+Signal add_2660_29/S1 undriven or does not drive anything - clipped.
+Signal add_2660_29/S0 undriven or does not drive anything - clipped.
+
+Signal add_29_33/S1 undriven or does not drive anything - clipped.
+Signal add_29_33/CO undriven or does not drive anything - clipped.
+Signal add_2660_31/S1 undriven or does not drive anything - clipped.
+Signal add_2660_31/S0 undriven or does not drive anything - clipped.
+Signal add_2660_33/S0 undriven or does not drive anything - clipped.
+Signal add_2660_33/CO undriven or does not drive anything - clipped.
+Signal add_2660_1/S1 undriven or does not drive anything - clipped.
+Signal add_2660_1/S0 undriven or does not drive anything - clipped.
+Signal add_2660_1/CI undriven or does not drive anything - clipped.
+Signal countcur_814_1023_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal countcur_814_1023_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal add_2660_3/S1 undriven or does not drive anything - clipped.
+Signal add_2660_3/S0 undriven or does not drive anything - clipped.
+Signal add_29_1/S0 undriven or does not drive anything - clipped.
+Signal add_29_1/CI undriven or does not drive anything - clipped.
+Signal add_2660_5/S1 undriven or does not drive anything - clipped.
+Signal add_2660_5/S0 undriven or does not drive anything - clipped.
+Block p/i4467 was optimized away.
+Block i1_1_lut was optimized away.
+Block i721_1_lut was optimized away.
+
+     
+
+
+
+<A name="mrp_pll"></A><B><U><big>PLL/DLL Summary</big></U></B>
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:                                p/PLLInst_0
+  PLL Type:                                         EHXPLLJ
+  Input Clock:                             PIN      OSC_in_c
+  Output Clock(P):                         NODE     clk_out1
+  Output Clock(S):                                  NONE
+  Output Clock(S2):                                 NONE
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     clk_out1
+  Reset Signal:                                     NONE
+  M Divider Reset Signal:                           NONE
+  C Divider Reset Signal:                           NONE
+  D Divider Reset Signal:                           NONE
+  Standby Signal:                                   NONE
+  PLL LOCK signal:                                  NONE
+  PLL Data bus CLK Signal:                          NONE
+  PLL Data bus Strobe Signal:                       NONE
+  PLL Data bus Reset Signal:                        NONE
+  PLL Data bus Write Enable Signal:                 NONE
+  PLL Data bus Address0:                            NONE
+  PLL Data bus Address1:                            NONE
+  PLL Data bus Address2:                            NONE
+  PLL Data bus Address3:                            NONE
+  PLL Data bus Address4:                            NONE
+  PLL Data In bus Data0:                            NONE
+  PLL Data In bus Data1:                            NONE
+  PLL Data In bus Data2:                            NONE
+  PLL Data In bus Data3:                            NONE
+
+  PLL Data In bus Data4:                            NONE
+  PLL Data In bus Data5:                            NONE
+  PLL Data In bus Data6:                            NONE
+  PLL Data In bus Data7:                            NONE
+  PLL Data bus Acknowledge:                         NONE
+  PLL Data Out bus Data0:                           NONE
+  PLL Data Out bus Data1:                           NONE
+  PLL Data Out bus Data2:                           NONE
+  PLL Data Out bus Data3:                           NONE
+  PLL Data Out bus Data4:                           NONE
+  PLL Data Out bus Data5:                           NONE
+  PLL Data Out bus Data6:                           NONE
+  PLL Data Out bus Data7:                           NONE
+  Input Clock Frequency (MHz):                      50.0000
+  Output Clock(P) Frequency (MHz):                  16.6667
+  Output Clock(S) Frequency (MHz):                  NA
+  Output Clock(S2) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 NA
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              VCO_PHASE
+  Pre Divider B Input:                              VCO_PHASE
+  Pre Divider C Input:                              VCO_PHASE
+  Pre Divider D Input:                              VCO_PHASE
+  VCO Bypass A Input:                               VCO_PHASE
+  VCO Bypass B Input:                               VCO_PHASE
+  VCO Bypass C Input:                               VCO_PHASE
+  VCO Bypass D Input:                               VCO_PHASE
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     3
+  CLKFB Divider:                                    1
+  CLKOP Divider:                                    16
+  CLKOS Divider:                                    1
+  CLKOS2 Divider:                                   1
+  CLKOS3 Divider:                                   1
+  Fractional N Divider:                             0
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 RISING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                0
+  CLKOS Trim Option Rising/Falling:                 FALLING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+  CLKOS3 Desired Phase Shift(degree):               0
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: p/PLLInst_0
+         Type: EHXPLLJ
+
+
+
+
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 9 secs  
+   Peak Memory Usage: 44 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

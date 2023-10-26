@@ -1,0 +1,251 @@
+
+Loading design for application trce from file helloworld1_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-640UHC
+Package:     TQFP144
+Performance: 5
+Loading device for application trce from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.42.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
+Wed Oct 25 19:12:55 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o helloworld1_impl1.tw1 -gui -msgset C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/promote.xml helloworld1_impl1_map.ncd helloworld1_impl1.prf 
+Design file:     helloworld1_impl1_map.ncd
+Preference file: helloworld1_impl1.prf
+Device,speed:    LCMXO2-640UHC,5
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_out1" 16.666667 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 43.558ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              count_i7  (from clk_out1 -)
+   Destination:    FF         Data in        count_i0  (to clk_out1 -)
+
+   Delay:              16.292ns  (34.3% logic, 65.7% route), 12 logic levels.
+
+ Constraint Details:
+
+     16.292ns physical path delay SLICE_65 to SLICE_63 meets
+     60.000ns delay constraint less
+      0.150ns DIN_SET requirement (totaling 59.850ns) by 43.558ns
+
+ Physical Path Details:
+
+      Data path SLICE_65 to SLICE_63:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409   SLICE_65.CLK to    SLICE_65.Q0 SLICE_65 (from clk_out1)
+ROUTE         5   e 1.030    SLICE_65.Q0 to   SLICE_175.C0 count_7
+CTOF_DEL    ---     0.452   SLICE_175.C0 to   SLICE_175.F0 SLICE_175
+ROUTE         1   e 1.030   SLICE_175.F0 to   SLICE_137.B0 n44
+CTOF_DEL    ---     0.452   SLICE_137.B0 to   SLICE_137.F0 SLICE_137
+ROUTE         1   e 1.030   SLICE_137.F0 to   SLICE_135.B0 n48
+CTOF_DEL    ---     0.452   SLICE_135.B0 to   SLICE_135.F0 SLICE_135
+ROUTE         1   e 1.030   SLICE_135.F0 to   SLICE_134.B0 n50
+CTOF_DEL    ---     0.452   SLICE_134.B0 to   SLICE_134.F0 SLICE_134
+ROUTE         2   e 0.401   SLICE_134.F0 to   SLICE_134.B1 n3406
+CTOF_DEL    ---     0.452   SLICE_134.B1 to   SLICE_134.F1 SLICE_134
+ROUTE         5   e 1.030   SLICE_134.F1 to   SLICE_151.B0 n5644
+CTOF_DEL    ---     0.452   SLICE_151.B0 to   SLICE_151.F0 SLICE_151
+ROUTE         1   e 1.030   SLICE_151.F0 to */SLICE_103.D1 n6499
+CTOOFX_DEL  ---     0.661 */SLICE_103.D1 to *LICE_103.OFX0 i3075/SLICE_103
+ROUTE         1   e 1.030 *LICE_103.OFX0 to    SLICE_47.B1 n5200
+CTOF_DEL    ---     0.452    SLICE_47.B1 to    SLICE_47.F1 SLICE_47
+ROUTE         1   e 1.030    SLICE_47.F1 to   SLICE_131.B1 n33
+CTOF_DEL    ---     0.452   SLICE_131.B1 to   SLICE_131.F1 SLICE_131
+ROUTE        32   e 1.030   SLICE_131.F1 to   SLICE_184.B0 n19
+CTOF_DEL    ---     0.452   SLICE_184.B0 to   SLICE_184.F0 SLICE_184
+ROUTE         1   e 1.030   SLICE_184.F0 to    SLICE_63.A0 n20_adj_718
+CTOF_DEL    ---     0.452    SLICE_63.A0 to    SLICE_63.F0 SLICE_63
+ROUTE         1   e 0.001    SLICE_63.F0 to   SLICE_63.DI0 count_31_N_8_0 (to clk_out1)
+                  --------
+                   16.292   (34.3% logic, 65.7% route), 12 logic levels.
+
+Report:   60.820MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "OSC_in_c" 50.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_out1" 16.666667 MHz  |             |             |
+;                                       |   16.667 MHz|   60.820 MHz|  12  
+                                        |             |             |
+FREQUENCY NET "OSC_in_c" 50.000000 MHz  |             |             |
+;                                       |            -|            -|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: clk_out1   Source: p/PLLInst_0.CLKOP   Loads: 58
+   Covered under: FREQUENCY NET "clk_out1" 16.666667 MHz ;
+
+Clock Domain: OSC_in_c   Source: OSC_in.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 7489 paths, 4 nets, and 1345 connections (92.95% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
+Wed Oct 25 19:12:55 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o helloworld1_impl1.tw1 -gui -msgset C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/promote.xml helloworld1_impl1_map.ncd helloworld1_impl1.prf 
+Design file:     helloworld1_impl1_map.ncd
+Preference file: helloworld1_impl1.prf
+Device,speed:    LCMXO2-640UHC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_out1" 16.666667 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.441ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              state__i2  (from clk_out1 -)
+   Destination:    FF         Data in        state__i2  (to clk_out1 -)
+
+   Delay:               0.428ns  (53.3% logic, 46.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.428ns physical path delay SLICE_81 to SLICE_81 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.441ns
+
+ Physical Path Details:
+
+      Data path SLICE_81 to SLICE_81:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133   SLICE_81.CLK to    SLICE_81.Q1 SLICE_81 (from clk_out1)
+ROUTE        99   e 0.199    SLICE_81.Q1 to    SLICE_81.M1 state_1
+MTOOFX_DEL  ---     0.095    SLICE_81.M1 to  SLICE_81.OFX1 SLICE_81
+ROUTE         1   e 0.001  SLICE_81.OFX1 to   SLICE_81.DI1 n3251 (to clk_out1)
+                  --------
+                    0.428   (53.3% logic, 46.7% route), 2 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY NET "OSC_in_c" 50.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_out1" 16.666667 MHz  |             |             |
+;                                       |     0.000 ns|     0.441 ns|   2  
+                                        |             |             |
+FREQUENCY NET "OSC_in_c" 50.000000 MHz  |             |             |
+;                                       |            -|            -|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: clk_out1   Source: p/PLLInst_0.CLKOP   Loads: 58
+   Covered under: FREQUENCY NET "clk_out1" 16.666667 MHz ;
+
+Clock Domain: OSC_in_c   Source: OSC_in.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 7489 paths, 4 nets, and 1370 connections (94.68% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

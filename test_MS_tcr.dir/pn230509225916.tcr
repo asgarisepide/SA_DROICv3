@@ -1,0 +1,23 @@
+#Start recording tcl command: 5/8/2023 18:49:56
+#Project Location: C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead; Project name: test_MS
+prj_project new -name "test_MS" -impl "impl1" -dev LCMXO2-7000HE-4FG484C -synthesis "lse"
+file copy -force -- "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/top.v" "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/toptest.v" "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/impl1/source"
+prj_src add "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/impl1/source/top.v" "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/impl1/source/toptest.v"
+prj_project save
+prj_src add "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/top.v"
+prj_run Synthesis -impl impl1
+prj_src remove "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/top.v"
+prj_run Synthesis -impl impl1
+prj_src remove "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/impl1/source/toptest.v"
+prj_run Synthesis -impl impl1
+prj_src add "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/pll1.v"
+prj_run Synthesis -impl impl1
+prj_src add "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/toptest.v"
+prj_src syn_sim -src "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/toptest.v" SimulateOnly
+prj_src add -exclude "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/impl1/impl1.xcf"
+prj_src enable "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/impl1/impl1.xcf"
+pgr_program run
+pgr_project save "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/impl1/impl1.xcf"
+prj_project save
+prj_project close
+#Stop recording: 5/9/2023 22:59:16

@@ -1,0 +1,86 @@
+m255
+K4
+z2
+!s11f vlog 2020.3 2020.10, Oct 14 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/TestCPLD
+vpll1
+Z1 !s110 1694641421
+!i10b 1
+!s100 DWH@h<eX7eeehCKoCF]2c2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Io7_NZYGYA8N;ch[k7PmLK3
+R0
+w1692828475
+8C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/pll1.v
+FC:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/pll1.v
+!i122 0
+L0 8 86
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OT;L;2020.3;71
+r1
+!s85 0
+31
+Z5 !s108 1694641421.000000
+!s107 C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/pll1.v|
+!s90 -reportprogress|300|+incdir+C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead|-work|work|C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/pll1.v|
+!s101 -O0
+!i113 1
+Z6 o-work work -O0
+Z7 !s92 +incdir+C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead -work work -O0
+Z8 tCvgOpt 0
+vtop
+R1
+!i10b 1
+!s100 ^UoOO8JLUNNNLaMT6hJh=0
+R2
+IO6m8deC^6GJgiVb;`nl]R3
+R0
+w1694639920
+8C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/top.v
+FC:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/top.v
+!i122 2
+L0 1 441
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/top.v|C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/toptest.v|
+Z9 !s90 -reportprogress|300|+incdir+C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead|-work|work|C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/toptest.v|
+!s101 -O0
+!i113 1
+R6
+R7
+R8
+vtoptest
+R1
+!i10b 1
+!s100 G@EaEU8?e:A[El6DaDGLE0
+R2
+IXK`SUQ4z;Lkf0nQMH[T7U3
+R0
+w1694641363
+8C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/toptest.v
+FC:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/toptest.v
+!i122 2
+L0 5 63
+R3
+R4
+r1
+!s85 0
+31
+R5
+Z10 !s107 C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/top.v|C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/toptest.v|
+R9
+!s101 -O0
+!i113 1
+R6
+R7
+R8

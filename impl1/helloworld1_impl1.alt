@@ -1,0 +1,82 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Wed Oct 25 19:14:04 2023 *
+NOTE DESIGN NAME: top *
+NOTE DEVICE NAME: LCMXO2-640UHC-5TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS Clk3 : 32 : out *
+NOTE PINS ADClk1 : 50 : out *
+NOTE PINS Clk2 : 69 : out *
+NOTE PINS Clk1 : 34 : out *
+NOTE PINS RS4 : 33 : out *
+NOTE PINS RS3 : 35 : out *
+NOTE PINS Sin16 : 65 : out *
+NOTE PINS Rst1 : 38 : out *
+NOTE PINS Sin15 : 67 : out *
+NOTE PINS Sin14 : 68 : out *
+NOTE PINS Sin12 : 9 : out *
+NOTE PINS Sin11 : 10 : out *
+NOTE PINS RS2 : 27 : out *
+NOTE PINS RS1 : 28 : out *
+NOTE PINS Sin10 : 11 : out *
+NOTE PINS Clk4 : 70 : out *
+NOTE PINS ADMode_1 : 52 : out *
+NOTE PINS RS8 : 62 : out *
+NOTE PINS ADRst3 : 105 : out *
+NOTE PINS ADRst2 : 104 : out *
+NOTE PINS ADRst1 : 43 : out *
+NOTE PINS ADMode1_3 : 96 : out *
+NOTE PINS ADMode1_2 : 95 : out *
+NOTE PINS ADMode1_1 : 55 : out *
+NOTE PINS RS7 : 61 : out *
+NOTE PINS Sin9 : 6 : out *
+NOTE PINS Sin8 : 76 : out *
+NOTE PINS ADClk2 : 1 : out *
+NOTE PINS ADMode_3 : 85 : out *
+NOTE PINS Sin7 : 77 : out *
+NOTE PINS Sin6 : 74 : out *
+NOTE PINS Sin5 : 75 : out *
+NOTE PINS ADClk3 : 99 : out *
+NOTE PINS Sin4 : 14 : out *
+NOTE PINS Sin3 : 13 : out *
+NOTE PINS Sin2 : 12 : out *
+NOTE PINS Sin1 : 19 : out *
+NOTE PINS PhaseA4 : 59 : out *
+NOTE PINS PhaseA2 : 58 : out *
+NOTE PINS PhaseC4 : 49 : out *
+NOTE PINS PhaseC3 : 21 : out *
+NOTE PINS PhaseC2 : 48 : out *
+NOTE PINS PhaseC1 : 47 : out *
+NOTE PINS DebugP3 : 20 : out *
+NOTE PINS DebugP2 : 106 : out *
+NOTE PINS p1 : 23 : out *
+NOTE PINS AD0 : 45 : out *
+NOTE PINS Rst : 56 : out *
+NOTE PINS PhaseA1 : 42 : out *
+NOTE PINS Rst2 : 40 : out *
+NOTE PINS RS6 : 60 : out *
+NOTE PINS RS5 : 83 : out *
+NOTE PINS ADMode_2 : 39 : out *
+NOTE PINS AD1 : 44 : out *
+NOTE PINS Sout1 : 127 : out *
+NOTE PINS Sout2 : 128 : out *
+NOTE PINS Sout3 : 132 : out *
+NOTE PINS Sout4 : 133 : out *
+NOTE PINS ClkOut : 142 : out *
+NOTE PINS DataOut : 141 : out *
+NOTE PINS ResCS1 : 122 : out *
+NOTE PINS ResCS2 : 119 : out *
+NOTE PINS ResCS3 : 113 : out *
+NOTE PINS ResCS4 : 114 : out *
+NOTE PINS ResCS5 : 115 : out *
+NOTE PINS ResCS6 : 111 : out *
+NOTE PINS ResCS7 : 112 : out *
+NOTE PINS ResCS8 : 121 : out *
+NOTE PINS ResClk : 109 : out *
+NOTE PINS ResSDI1 : 110 : out *
+NOTE PINS ResSDI2 : 139 : out *
+NOTE PINS ADSout7 : 54 : in *
+NOTE PINS ADSout8 : 71 : in *
+NOTE PINS OSC_in : 125 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

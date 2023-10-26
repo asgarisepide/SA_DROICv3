@@ -1,0 +1,1029 @@
+
+synthesis -f "helloworld1_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Oct 25 19:12:18 2023
+
+
+Command Line:  synthesis -f helloworld1_impl1_lattice.synproj -gui -msgset C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 5.
+The -t option is TQFP144.
+The -d option is LCMXO2-640UHC.
+Using package TQFP144.
+Using performance grade 5.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-640UHC
+
+### Package : TQFP144
+
+### Speed   : 5
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Balanced
+The -top option is not used.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead (searchpath added)
+-p C:/lscc/diamond/3.12/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/impl1 (searchpath added)
+-p C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead (searchpath added)
+Verilog design file = C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/top.v
+Verilog design file = C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/pll1.v
+NGD file = helloworld1_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+    <postMsg mid="35001200" type="Warning" dynamic="1" navigation="0" arg0="top"  />
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/abel/documents/cpldoscreadoutmultiread/top.v. VERI-1482
+Analyzing Verilog file c:/users/abel/documents/cpldoscreadoutmultiread/pll1.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): top
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/abel/documents/cpldoscreadoutmultiread/top.v(1): " arg1="top" arg2="c:/users/abel/documents/cpldoscreadoutmultiread/top.v" arg3="1"  />
+    <postMsg mid="35901220" type="Warning" dynamic="2" navigation="2" arg0="c:/users/abel/documents/cpldoscreadoutmultiread/top.v(48): " arg1="confg" arg2="c:/users/abel/documents/cpldoscreadoutmultiread/top.v" arg3="48"  />
+    <postMsg mid="35901220" type="Warning" dynamic="2" navigation="2" arg0="c:/users/abel/documents/cpldoscreadoutmultiread/top.v(50): " arg1="confg_exp" arg2="c:/users/abel/documents/cpldoscreadoutmultiread/top.v" arg3="50"  />
+    <postMsg mid="35901098" type="Warning" dynamic="2" navigation="2" arg0="c:/users/abel/documents/cpldoscreadoutmultiread/top.v(3): " arg1="PhaseC2" arg2="c:/users/abel/documents/cpldoscreadoutmultiread/top.v" arg3="3"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/abel/documents/cpldoscreadoutmultiread/top.v(139): " arg1="32" arg2="1" arg3="c:/users/abel/documents/cpldoscreadoutmultiread/top.v" arg4="139"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/abel/documents/cpldoscreadoutmultiread/pll1.v(8): " arg1="pll1" arg2="c:/users/abel/documents/cpldoscreadoutmultiread/pll1.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): " arg1="VLO" arg2="C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1124"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): " arg1="EHXPLLJ(CLKI_DIV=3,CLKOP_DIV=16,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE=&quot;DISABLED&quot;,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=15,CLKOS_TRIM_POL=&quot;FALLING&quot;)" arg2="C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1730"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/abel/documents/cpldoscreadoutmultiread/top.v(455): " arg1="32" arg2="13" arg3="c:/users/abel/documents/cpldoscreadoutmultiread/top.v" arg4="455"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/abel/documents/cpldoscreadoutmultiread/top.v(459): " arg1="32" arg2="5" arg3="c:/users/abel/documents/cpldoscreadoutmultiread/top.v" arg4="459"  />
+    <postMsg mid="35935014" type="Warning" dynamic="2" navigation="2" arg0="c:/users/abel/documents/cpldoscreadoutmultiread/top.v(480): " arg1="DebugP3_317" arg2="c:/users/abel/documents/cpldoscreadoutmultiread/top.v" arg3="480"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/abel/documents/cpldoscreadoutmultiread/top.v(480): " arg1="AD0_332" arg2="c:/users/abel/documents/cpldoscreadoutmultiread/top.v" arg3="480"  />
+Last elaborated design is top()
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.42.
+Top-level module name = top.
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="gnd"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="pwr"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ADSout1"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ADSout2"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ADSout3"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ADSout4"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ADSout5"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ADSout6"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ADSout15"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ResCS1"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ResCS2"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ResCS3"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ResCS4"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ResCS5"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ResCS6"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ResCS8"  />
+######## Missing driver on net ResCS1. Patching with GND.
+######## Missing driver on net ResCS2. Patching with GND.
+######## Missing driver on net ResCS3. Patching with GND.
+######## Missing driver on net ResCS4. Patching with GND.
+######## Missing driver on net ResCS5. Patching with GND.
+######## Missing driver on net ResCS6. Patching with GND.
+######## Missing driver on net ResCS8. Patching with GND.
+
+
+
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="state"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ADSout1"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ADSout2"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ADSout3"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ADSout4"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ADSout5"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ADSout6"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ADSout15"  />
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Duplicate register/latch removal. RS7_326 is a one-to-one match with RS3_322.
+Duplicate register/latch removal. RS6_325 is a one-to-one match with RS2_321.
+Duplicate register/latch removal. RS5_324 is a one-to-one match with RS1_320.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in top_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="ADSout1" arg2="ADSout1"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="ADSout1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="ADSout2" arg2="ADSout2"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="ADSout2"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="ADSout3" arg2="ADSout3"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="ADSout3"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="ADSout4" arg2="ADSout4"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="ADSout4"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="ADSout5" arg2="ADSout5"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="ADSout5"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="ADSout6" arg2="ADSout6"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="ADSout6"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="ADSout15" arg2="ADSout15"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="ADSout15"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="14"  />
+
+Design Results:
+    562 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file helloworld1_impl1.ngd.
+
+################### Begin Area Report (top)######################
+Number of register bits => 76 of 964 (7 % )
+CCU2D => 38
+EHXPLLJ => 1
+FD1P3AX => 11
+FD1P3IX => 15
+FD1S3AX => 42
+FD1S3IX => 7
+FD1S3JX => 1
+GSR => 1
+IB => 3
+INV => 1
+L6MUX21 => 2
+LUT4 => 327
+OB => 71
+PFUMX => 39
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : p/clk_out1, loads : 4
+  Net : OSC_in_c, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 7
+Top 7 highest fanout Clock Enables:
+  Net : clk_out1_N_7_enable_26, loads : 8
+  Net : clk_out1_N_7_enable_14, loads : 5
+  Net : clk_out1_N_7_enable_23, loads : 4
+  Net : clk_out1_N_7_enable_10, loads : 3
+  Net : clk_out1_N_7_enable_7, loads : 3
+  Net : clk_out1_N_7_enable_19, loads : 3
+  Net : clk_out1_N_7_enable_20, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : state_1, loads : 99
+  Net : state_0, loads : 79
+  Net : state_3, loads : 77
+  Net : state_2, loads : 77
+  Net : p/clk_out1_N_7, loads : 75
+  Net : state_4_N_80_1, loads : 36
+  Net : state_4_N_110_0, loads : 34
+  Net : n19, loads : 32
+  Net : n7, loads : 32
+  Net : n63_adj_646, loads : 32
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_out1]                |  200.000 MHz|   57.478 MHz|    13 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 69.012  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 1.719  secs
+--------------------------------------------------------------
+
+map -a "MachXO2" -p LCMXO2-640UHC -t TQFP144 -s 5 -oc Commercial   "helloworld1_impl1.ngd" -o "helloworld1_impl1_map.ncd" -pr "helloworld1_impl1.prf" -mp "helloworld1_impl1.mrp" -lpf "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/impl1/helloworld1_impl1.lpf" -lpf "C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf"  -c 0           
+map:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: helloworld1_impl1.ngd
+   Picdevice="LCMXO2-640UHC"
+
+   Pictype="TQFP144"
+
+   Picspeed=5
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-640UHCTQFP144, Performance used: 5.
+
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf(113): Semantic error in &quot;IOBUF PORT &quot;ADSout6&quot; PULLMODE=NONE IO_TYPE=LVCMOS12 ;&quot;: " arg1="ADSout6" arg2="C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf" arg3="113"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf(114): Semantic error in &quot;IOBUF PORT &quot;ADSout5&quot; PULLMODE=NONE IO_TYPE=LVCMOS12 ;&quot;: " arg1="ADSout5" arg2="C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf" arg3="114"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf(115): Semantic error in &quot;IOBUF PORT &quot;ADSout4&quot; PULLMODE=NONE IO_TYPE=LVCMOS12 ;&quot;: " arg1="ADSout4" arg2="C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf" arg3="115"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf(116): Semantic error in &quot;IOBUF PORT &quot;ADSout3&quot; PULLMODE=NONE IO_TYPE=LVCMOS12 ;&quot;: " arg1="ADSout3" arg2="C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf" arg3="116"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf(117): Semantic error in &quot;IOBUF PORT &quot;ADSout2&quot; PULLMODE=NONE IO_TYPE=LVCMOS12 ;&quot;: " arg1="ADSout2" arg2="C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf" arg3="117"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf(118): Semantic error in &quot;IOBUF PORT &quot;ADSout1&quot; PULLMODE=NONE IO_TYPE=LVCMOS12 ;&quot;: " arg1="ADSout1" arg2="C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/helloworld1.lpf" arg3="118"  />
+Loading device for application map from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.42.
+
+Running general design DRC...
+
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="ADSout1"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="ADSout2"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="ADSout3"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="ADSout4"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="ADSout5"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="ADSout6"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="ADSout15"  />
+Removing unused logic...
+
+Optimizing...
+
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="ADSout1"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="ADSout2"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="ADSout3"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="ADSout4"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="ADSout5"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="ADSout6"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="ADSout15"  />
+
+
+
+Design Summary:
+   Number of registers:     76 out of   964 (8%)
+      PFU registers:           76 out of   640 (12%)
+      PIO registers:            0 out of   324 (0%)
+   Number of SLICEs:       202 out of   320 (63%)
+      SLICEs as Logic/ROM:    202 out of   320 (63%)
+      SLICEs as RAM:            0 out of   240 (0%)
+      SLICEs as Carry:         38 out of   320 (12%)
+   Number of LUT4s:        403 out of   640 (63%)
+      Number used as logic LUTs:        327
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       76
+      Number used as shift registers:     0
+   Number of PIO sites used: 74 + 4(JTAG) out of 108 (72%)
+   Number of block RAMs:  0 out of 7 (0%)
+   Number of GSRs:        0 out of 1 (0%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 1 (100%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  2
+     Net clk_out1: 56 loads, 1 rising, 55 falling (Driver: p/PLLInst_0 )
+     Net OSC_in_c: 1 loads, 1 rising, 0 falling (Driver: PIO OSC_in )
+   Number of Clock Enables:  7
+     Net clk_out1_N_7_enable_14: 3 loads, 3 LSLICEs
+     Net clk_out1_N_7_enable_23: 2 loads, 2 LSLICEs
+     Net clk_out1_N_7_enable_19: 3 loads, 3 LSLICEs
+     Net clk_out1_N_7_enable_26: 4 loads, 4 LSLICEs
+     Net clk_out1_N_7_enable_7: 2 loads, 2 LSLICEs
+     Net clk_out1_N_7_enable_10: 3 loads, 3 LSLICEs
+     Net clk_out1_N_7_enable_20: 1 loads, 1 LSLICEs
+   Number of LSRs:  7
+     Net n3657: 3 loads, 3 LSLICEs
+     Net n2784: 3 loads, 3 LSLICEs
+     Net n6506: 2 loads, 2 LSLICEs
+     Net count_0: 2 loads, 2 LSLICEs
+     Net state_4_N_95_0: 1 loads, 1 LSLICEs
+     Net n3455: 4 loads, 4 LSLICEs
+     Net n6511: 2 loads, 2 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net state_1: 99 loads
+     Net state_0: 79 loads
+     Net state_3: 78 loads
+     Net state_2: 77 loads
+     Net state_4_N_80_1: 36 loads
+     Net state_4_N_110_0: 34 loads
+     Net n19: 32 loads
+     Net n5596: 32 loads
+     Net n63_adj_646: 32 loads
+     Net n7: 32 loads
+ 
+
+   Number of warnings:  20
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 9 secs  
+Peak Memory Usage: 44 MB
+
+Dumping design to file helloworld1_impl1_map.ncd.
+
+ncd2vdb "helloworld1_impl1_map.ncd" ".vdbs/helloworld1_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+
+trce -f "helloworld1_impl1.mt" -o "helloworld1_impl1.tw1" "helloworld1_impl1_map.ncd" "helloworld1_impl1.prf"
+trce:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file helloworld1_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-640UHC
+Package:     TQFP144
+Performance: 5
+Loading device for application trce from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.42.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
+Wed Oct 25 19:12:55 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o helloworld1_impl1.tw1 -gui -msgset C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/promote.xml helloworld1_impl1_map.ncd helloworld1_impl1.prf 
+Design file:     helloworld1_impl1_map.ncd
+Preference file: helloworld1_impl1.prf
+Device,speed:    LCMXO2-640UHC,5
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 7489 paths, 4 nets, and 1345 connections (92.95% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
+Wed Oct 25 19:12:55 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o helloworld1_impl1.tw1 -gui -msgset C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/promote.xml helloworld1_impl1_map.ncd helloworld1_impl1.prf 
+Design file:     helloworld1_impl1_map.ncd
+Preference file: helloworld1_impl1.prf
+Device,speed:    LCMXO2-640UHC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 7489 paths, 4 nets, and 1370 connections (94.68% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 8 secs 
+Peak Memory Usage: 50 MB
+
+
+ldbanno "helloworld1_impl1_map.ncd" -n Verilog -o "helloworld1_impl1_mapvo.vo" -w -neg
+ldbanno: version Diamond (64-bit) 3.12.0.240.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the helloworld1_impl1_map design file.
+
+
+Loading design for application ldbanno from file helloworld1_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-640UHC
+Package:     TQFP144
+Performance: 5
+Loading device for application ldbanno from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.42.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design helloworld1_impl1_map.ncd into .ldb format.
+Writing Verilog netlist to file helloworld1_impl1_mapvo.vo
+Writing SDF timing to file helloworld1_impl1_mapvo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 0 secs 
+Total REAL Time: 9 secs 
+Peak Memory Usage: 46 MB
+
+ldbanno "helloworld1_impl1_map.ncd" -n VHDL -o "helloworld1_impl1_mapvho.vho" -w -neg
+ldbanno: version Diamond (64-bit) 3.12.0.240.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a VHDL netlist using the orca library type based on the helloworld1_impl1_map design file.
+
+
+Loading design for application ldbanno from file helloworld1_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-640UHC
+Package:     TQFP144
+Performance: 5
+Loading device for application ldbanno from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.42.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design helloworld1_impl1_map.ncd into .ldb format.
+Writing VHDL netlist to file helloworld1_impl1_mapvho.vho
+Writing SDF timing to file helloworld1_impl1_mapvho.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 1 secs 
+Total REAL Time: 9 secs 
+Peak Memory Usage: 46 MB
+
+mpartrce -p "helloworld1_impl1.p2t" -f "helloworld1_impl1.p3t" -tf "helloworld1_impl1.pt" "helloworld1_impl1_map.ncd" "helloworld1_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "helloworld1_impl1_map.ncd"
+Wed Oct 25 19:13:14 2023
+
+PAR: Place And Route Diamond (64-bit) 3.12.0.240.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 helloworld1_impl1_map.ncd helloworld1_impl1.dir/5_1.ncd helloworld1_impl1.prf
+Preference file: helloworld1_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file helloworld1_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-640UHC
+Package:     TQFP144
+Performance: 5
+Loading device for application par from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.42.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   74+4(JTAG)/108     72% used
+                  74+4(JTAG)/108     72% bonded
+
+   SLICE            202/320          63% used
+
+   PLL                1/1           100% used
+
+
+Number of Signals: 445
+Number of Connections: 1447
+
+Pin Constraint Summary:
+   73 out of 74 pins locked (98% locked).
+
+    <postMsg mid="61091050" type="Warning" dynamic="4" navigation="0" arg0="OSC_in" arg1="p/PLLInst_0" arg2="125" arg3="PT12D"  />
+The following 1 signal is selected to use the primary clock routing resources:
+    clk_out1 (driver: p/PLLInst_0, clk load #: 55)
+
+
+No signal is selected as secondary clock.
+
+No signal is selected as Global Set/Reset.
+.
+Starting Placer Phase 0.
+...........
+Finished Placer Phase 0.  REAL time: 9 secs 
+
+Starting Placer Phase 1.
+....................
+Placer score = 79407.
+Finished Placer Phase 1.  REAL time: 15 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  79325
+Finished Placer Phase 2.  REAL time: 15 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  PLL        : 1 out of 1 (100%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Global Clocks:
+  PRIMARY "clk_out1" from CLKOP on comp "p/PLLInst_0" on PLL site "LPLL", clk load = 55
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 0 out of 8 (0%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   74 + 4(JTAG) out of 108 (72.2%) PIO sites used.
+   74 + 4(JTAG) out of 108 (72.2%) bonded PIO sites used.
+   Number of PIO comps: 74; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+----------------+------------+-----------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref |
++----------+----------------+------------+-----------+
+| 0        | 18 / 28 ( 64%) | 3.3V       | -         |
+| 1        | 12 / 26 ( 46%) | 1.2V       | -         |
+| 2        | 26 / 28 ( 92%) | 1.2V       | -         |
+| 3        | 18 / 26 ( 69%) | 1.2V       | -         |
++----------+----------------+------------+-----------+
+
+Total placer CPU time: 6 secs 
+
+Dumping design to file helloworld1_impl1.dir/5_1.ncd.
+
+0 connections routed; 1447 unrouted.
+Starting router resource preassignment
+    <postMsg mid="62061005" type="Warning" dynamic="2" navigation="0" arg0="CLKI" arg1="OSC_in_c"  />
+
+Completed router resource preassignment. Real time: 18 secs 
+
+Start NBR router at 19:13:32 10/25/23
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 19:13:32 10/25/23
+
+Start NBR section for initial routing at 19:13:32 10/25/23
+Level 4, iteration 1
+28(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 41.243ns/0.000ns; real time: 18 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 19:13:32 10/25/23
+Level 4, iteration 1
+5(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 40.615ns/0.000ns; real time: 18 secs 
+Level 4, iteration 2
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 40.615ns/0.000ns; real time: 18 secs 
+Level 4, iteration 3
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 40.615ns/0.000ns; real time: 19 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 19:13:33 10/25/23
+
+Start NBR section for re-routing at 19:13:33 10/25/23
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 40.615ns/0.000ns; real time: 19 secs 
+
+Start NBR section for post-routing at 19:13:33 10/25/23
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : 40.615ns
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 10 secs 
+Total REAL time: 19 secs 
+Completely routed.
+End of route.  1447 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file helloworld1_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 40.615
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.377
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 10 secs 
+Total REAL time to completion: 19 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "helloworld1_impl1.pt" -o "helloworld1_impl1.twr" "helloworld1_impl1.ncd" "helloworld1_impl1.prf"
+trce:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file helloworld1_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-640UHC
+Package:     TQFP144
+Performance: 5
+Loading device for application trce from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.42.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
+Wed Oct 25 19:13:42 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o helloworld1_impl1.twr -gui -msgset C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/promote.xml helloworld1_impl1.ncd helloworld1_impl1.prf 
+Design file:     helloworld1_impl1.ncd
+Preference file: helloworld1_impl1.prf
+Device,speed:    LCMXO2-640UHC,5
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 7489 paths, 4 nets, and 1370 connections (94.68% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
+Wed Oct 25 19:13:42 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o helloworld1_impl1.twr -gui -msgset C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/promote.xml helloworld1_impl1.ncd helloworld1_impl1.prf 
+Design file:     helloworld1_impl1.ncd
+Preference file: helloworld1_impl1.prf
+Device,speed:    LCMXO2-640UHC,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 7489 paths, 4 nets, and 1370 connections (94.68% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 8 secs 
+Peak Memory Usage: 51 MB
+
+
+tmcheck -par "helloworld1_impl1.par" 
+
+bitgen -f "helloworld1_impl1.t2b" -w "helloworld1_impl1.ncd"  "helloworld1_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.12.0.240.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file helloworld1_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-640UHC
+Package:     TQFP144
+Performance: 5
+Loading device for application Bitgen from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.42.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from helloworld1_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.95.
+ 
+Saving bit stream in "helloworld1_impl1.bit".
+Total CPU Time: 2 secs 
+Total REAL Time: 10 secs 
+Peak Memory Usage: 255 MB
+
+tmcheck -par "helloworld1_impl1.par" 
+
+bitgen -f "helloworld1_impl1.t2b" -w "helloworld1_impl1.ncd"  -jedec "helloworld1_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.12.0.240.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file helloworld1_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-640UHC
+Package:     TQFP144
+Performance: 5
+Loading device for application Bitgen from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.42.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from helloworld1_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.95.
+ 
+Saving bit stream in "helloworld1_impl1.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        511 Pages (128*511 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  511 Pages (Page 0 to Page 510).
+Initialized UFM Pages:                     0 Page.
+ 
+Total CPU Time: 2 secs 
+Total REAL Time: 11 secs 
+Peak Memory Usage: 255 MB

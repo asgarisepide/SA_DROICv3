@@ -1,0 +1,17 @@
+if {![file exists "C:/Users/Abel/Documents/DiamondProject/heeloworld1/heeloworld1.mpf"]} { 
+	project new "C:/Users/Abel/Documents/DiamondProject/heeloworld1" heeloworld1
+	project addfile "C:/Users/Abel/Documents/DiamondProject/heeloworld1/top.v"
+	project addfile "C:/Users/Abel/Documents/DiamondProject/heeloworld1/toptest.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+C:/Users/Abel/Documents/DiamondProject/heeloworld1  -work work  "C:/Users/Abel/Documents/DiamondProject/heeloworld1/top.v"
+	vlog  +incdir+C:/Users/Abel/Documents/DiamondProject/heeloworld1  -work work  "C:/Users/Abel/Documents/DiamondProject/heeloworld1/toptest.v"
+} else {
+	project open "C:/Users/Abel/Documents/DiamondProject/heeloworld1/heeloworld1"
+	project compileoutofdate
+}
+vsim -L work -L pmi_work -L ovi_machxo2  toptest
+view wave
+add wave /*
+run 1000ns

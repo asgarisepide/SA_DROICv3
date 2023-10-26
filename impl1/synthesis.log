@@ -1,0 +1,238 @@
+synthesis:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Oct 25 19:12:18 2023
+
+
+Command Line:  synthesis -f helloworld1_impl1_lattice.synproj -gui -msgset C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 5.
+The -t option is TQFP144.
+The -d option is LCMXO2-640UHC.
+Using package TQFP144.
+Using performance grade 5.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-640UHC
+
+### Package : TQFP144
+
+### Speed   : 5
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+The -top option is not used.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead (searchpath added)
+-p C:/lscc/diamond/3.12/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/impl1 (searchpath added)
+-p C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead (searchpath added)
+Verilog design file = C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/top.v
+Verilog design file = C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/pll1.v
+NGD file = helloworld1_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+WARNING - synthesis: Setting top as the top-level module. To specify the top-level module explicitly, use the -top option.
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/abel/documents/cpldoscreadoutmultiread/top.v. VERI-1482
+Analyzing Verilog file c:/users/abel/documents/cpldoscreadoutmultiread/pll1.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): top
+INFO - synthesis: c:/users/abel/documents/cpldoscreadoutmultiread/top.v(1): compiling module top. VERI-1018
+WARNING - synthesis: c:/users/abel/documents/cpldoscreadoutmultiread/top.v(48): using initial value of confg since it is never assigned. VERI-1220
+WARNING - synthesis: c:/users/abel/documents/cpldoscreadoutmultiread/top.v(50): using initial value of confg_exp since it is never assigned. VERI-1220
+WARNING - synthesis: c:/users/abel/documents/cpldoscreadoutmultiread/top.v(3): port PhaseC2 is already defined. VERI-1098
+WARNING - synthesis: c:/users/abel/documents/cpldoscreadoutmultiread/top.v(139): expression size 32 truncated to fit in target size 1. VERI-1209
+INFO - synthesis: c:/users/abel/documents/cpldoscreadoutmultiread/pll1.v(8): compiling module pll1. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): compiling module VLO. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKI_DIV=3,CLKOP_DIV=16,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE="DISABLED",CLKOS2_ENABLE="DISABLED",CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=15,CLKOS_TRIM_POL="FALLING"). VERI-1018
+WARNING - synthesis: c:/users/abel/documents/cpldoscreadoutmultiread/top.v(455): expression size 32 truncated to fit in target size 13. VERI-1209
+WARNING - synthesis: c:/users/abel/documents/cpldoscreadoutmultiread/top.v(459): expression size 32 truncated to fit in target size 5. VERI-1209
+WARNING - synthesis: c:/users/abel/documents/cpldoscreadoutmultiread/top.v(480): Register DebugP3_317 is stuck at One. VDB-5014
+WARNING - synthesis: c:/users/abel/documents/cpldoscreadoutmultiread/top.v(480): Register AD0_332 is stuck at Zero. VDB-5013
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.42.
+Top-level module name = top.
+WARNING - synthesis: Initial value found on net gnd will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net pwr will be ignored due to unrecognized driver type
+WARNING - synthesis: I/O Port ADSout1 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ADSout2 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ADSout3 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ADSout4 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ADSout5 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ADSout6 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ADSout15 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ResCS1 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ResCS2 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ResCS3 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ResCS4 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ResCS5 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ResCS6 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ResCS8 's net has no driver and is unused.
+######## Missing driver on net ResCS1. Patching with GND.
+######## Missing driver on net ResCS2. Patching with GND.
+######## Missing driver on net ResCS3. Patching with GND.
+######## Missing driver on net ResCS4. Patching with GND.
+######## Missing driver on net ResCS5. Patching with GND.
+######## Missing driver on net ResCS6. Patching with GND.
+######## Missing driver on net ResCS8. Patching with GND.
+
+
+
+WARNING - synthesis: Bit 0 of Register state is stuck at Zero
+WARNING - synthesis: I/O Port ADSout1 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ADSout2 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ADSout3 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ADSout4 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ADSout5 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ADSout6 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ADSout15 's net has no driver and is unused.
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Duplicate register/latch removal. RS7_326 is a one-to-one match with RS3_322.
+Duplicate register/latch removal. RS6_325 is a one-to-one match with RS2_321.
+Duplicate register/latch removal. RS5_324 is a one-to-one match with RS1_320.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in top_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: logical net 'ADSout1' has no load.
+WARNING - synthesis: input pad net 'ADSout1' has no legal load.
+WARNING - synthesis: logical net 'ADSout2' has no load.
+WARNING - synthesis: input pad net 'ADSout2' has no legal load.
+WARNING - synthesis: logical net 'ADSout3' has no load.
+WARNING - synthesis: input pad net 'ADSout3' has no legal load.
+WARNING - synthesis: logical net 'ADSout4' has no load.
+WARNING - synthesis: input pad net 'ADSout4' has no legal load.
+WARNING - synthesis: logical net 'ADSout5' has no load.
+WARNING - synthesis: input pad net 'ADSout5' has no legal load.
+WARNING - synthesis: logical net 'ADSout6' has no load.
+WARNING - synthesis: input pad net 'ADSout6' has no legal load.
+WARNING - synthesis: logical net 'ADSout15' has no load.
+WARNING - synthesis: input pad net 'ADSout15' has no legal load.
+WARNING - synthesis: DRC complete with 14 warnings.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file helloworld1_impl1.ngd.
+
+################### Begin Area Report (top)######################
+Number of register bits => 76 of 964 (7 % )
+CCU2D => 38
+EHXPLLJ => 1
+FD1P3AX => 11
+FD1P3IX => 15
+FD1S3AX => 42
+FD1S3IX => 7
+FD1S3JX => 1
+GSR => 1
+IB => 3
+INV => 1
+L6MUX21 => 2
+LUT4 => 327
+OB => 71
+PFUMX => 39
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : p/clk_out1, loads : 4
+  Net : OSC_in_c, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 7
+Top 7 highest fanout Clock Enables:
+  Net : clk_out1_N_7_enable_26, loads : 8
+  Net : clk_out1_N_7_enable_14, loads : 5
+  Net : clk_out1_N_7_enable_23, loads : 4
+  Net : clk_out1_N_7_enable_10, loads : 3
+  Net : clk_out1_N_7_enable_7, loads : 3
+  Net : clk_out1_N_7_enable_19, loads : 3
+  Net : clk_out1_N_7_enable_20, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : state_1, loads : 99
+  Net : state_0, loads : 79
+  Net : state_3, loads : 77
+  Net : state_2, loads : 77
+  Net : p/clk_out1_N_7, loads : 75
+  Net : state_4_N_80_1, loads : 36
+  Net : state_4_N_110_0, loads : 34
+  Net : n19, loads : 32
+  Net : n7, loads : 32
+  Net : n63_adj_646, loads : 32
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_out1]                |  200.000 MHz|   57.478 MHz|    13 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 69.012  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 1.719  secs
+--------------------------------------------------------------

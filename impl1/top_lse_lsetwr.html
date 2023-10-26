@@ -1,0 +1,300 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Thu Aug 24 17:49:38 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     top
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_out1]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 12.410ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             count_i7  (from clk_out1 +)
+   Destination:    FD1S3AX    D              count_i1  (to clk_out1 -)
+
+   Delay:                  17.264ns  (32.1% logic, 67.9% route), 13 logic levels.
+
+ Constraint Details:
+
+     17.264ns data_path count_i7 to count_i1 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 12.410ns
+
+ Path Details: count_i7 to count_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              count_i7 (from clk_out1)
+Route         5   e 1.222                                  count[7]
+LUT4        ---     0.448              C to Z              i18_4_lut
+Route         1   e 0.788                                  n44
+LUT4        ---     0.448              B to Z              i22_4_lut
+Route         1   e 0.788                                  n48
+LUT4        ---     0.448              B to Z              i24_4_lut
+Route         1   e 0.788                                  n50
+LUT4        ---     0.448              B to Z              i25_4_lut
+Route         2   e 0.954                                  n3392
+LUT4        ---     0.448              D to Z              i3_4_lut
+Route         7   e 1.255                                  n3389
+LUT4        ---     0.448              B to Z              i1_2_lut_rep_105
+Route         3   e 1.051                                  n6682
+LUT4        ---     0.448              A to Z              i1_2_lut_4_lut_adj_59
+Route         1   e 0.020                                  n5303
+MUXL5       ---     0.212           BLUT to Z              i3294
+Route         1   e 0.788                                  n5281
+LUT4        ---     0.448              B to Z              i38_4_lut
+Route         1   e 0.788                                  n33
+LUT4        ---     0.448              B to Z              i1_4_lut_adj_215
+Route        32   e 1.703                                  n19
+LUT4        ---     0.448              B to Z              i1_2_lut_adj_65
+Route         1   e 0.788                                  n20_adj_562
+LUT4        ---     0.448              A to Z              i2_4_lut_adj_60
+Route         1   e 0.788                                  count_31__N_8[1]
+                  --------
+                   17.264  (32.1% logic, 67.9% route), 13 logic levels.
+
+
+Error:  The following path violates requirements by 12.410ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             count_i7  (from clk_out1 +)
+   Destination:    FD1S3AX    D              count_i1  (to clk_out1 -)
+
+   Delay:                  17.264ns  (32.1% logic, 67.9% route), 13 logic levels.
+
+ Constraint Details:
+
+     17.264ns data_path count_i7 to count_i1 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 12.410ns
+
+ Path Details: count_i7 to count_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              count_i7 (from clk_out1)
+Route         5   e 1.222                                  count[7]
+LUT4        ---     0.448              C to Z              i18_4_lut
+Route         1   e 0.788                                  n44
+LUT4        ---     0.448              B to Z              i22_4_lut
+Route         1   e 0.788                                  n48
+LUT4        ---     0.448              B to Z              i24_4_lut
+Route         1   e 0.788                                  n50
+LUT4        ---     0.448              B to Z              i25_4_lut
+Route         2   e 0.954                                  n3392
+LUT4        ---     0.448              D to Z              i3_4_lut
+Route         7   e 1.255                                  n3389
+LUT4        ---     0.448              D to Z              i1_2_lut_rep_104_4_lut
+Route         3   e 1.051                                  n6681
+LUT4        ---     0.448              C to Z              i3793_4_lut
+Route         1   e 0.020                                  n5312
+MUXL5       ---     0.212           ALUT to Z              i3294
+Route         1   e 0.788                                  n5281
+LUT4        ---     0.448              B to Z              i38_4_lut
+Route         1   e 0.788                                  n33
+LUT4        ---     0.448              B to Z              i1_4_lut_adj_215
+Route        32   e 1.703                                  n19
+LUT4        ---     0.448              B to Z              i1_2_lut_adj_65
+Route         1   e 0.788                                  n20_adj_562
+LUT4        ---     0.448              A to Z              i2_4_lut_adj_60
+Route         1   e 0.788                                  count_31__N_8[1]
+                  --------
+                   17.264  (32.1% logic, 67.9% route), 13 logic levels.
+
+
+Error:  The following path violates requirements by 12.410ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             count_i7  (from clk_out1 +)
+   Destination:    FD1S3AX    D              count_i2  (to clk_out1 -)
+
+   Delay:                  17.264ns  (32.1% logic, 67.9% route), 13 logic levels.
+
+ Constraint Details:
+
+     17.264ns data_path count_i7 to count_i2 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 12.410ns
+
+ Path Details: count_i7 to count_i2
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              count_i7 (from clk_out1)
+Route         5   e 1.222                                  count[7]
+LUT4        ---     0.448              C to Z              i18_4_lut
+Route         1   e 0.788                                  n44
+LUT4        ---     0.448              B to Z              i22_4_lut
+Route         1   e 0.788                                  n48
+LUT4        ---     0.448              B to Z              i24_4_lut
+Route         1   e 0.788                                  n50
+LUT4        ---     0.448              B to Z              i25_4_lut
+Route         2   e 0.954                                  n3392
+LUT4        ---     0.448              D to Z              i3_4_lut
+Route         7   e 1.255                                  n3389
+LUT4        ---     0.448              D to Z              i1_2_lut_rep_104_4_lut
+Route         3   e 1.051                                  n6681
+LUT4        ---     0.448              C to Z              i3793_4_lut
+Route         1   e 0.020                                  n5312
+MUXL5       ---     0.212           ALUT to Z              i3294
+Route         1   e 0.788                                  n5281
+LUT4        ---     0.448              B to Z              i38_4_lut
+Route         1   e 0.788                                  n33
+LUT4        ---     0.448              B to Z              i1_4_lut_adj_215
+Route        32   e 1.703                                  n19
+LUT4        ---     0.448              B to Z              i1_2_lut_adj_55
+Route         1   e 0.788                                  n20_adj_564
+LUT4        ---     0.448              A to Z              i2_4_lut_adj_53
+Route         1   e 0.788                                  count_31__N_8[2]
+                  --------
+                   17.264  (32.1% logic, 67.9% route), 13 logic levels.
+
+Warning: 17.410 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_out1]                |     5.000 ns|    17.410 ns|    13 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+n19                                     |      32|    3328|     81.25%
+                                        |        |        |
+n33                                     |       1|    3328|     81.25%
+                                        |        |        |
+n3389                                   |       7|    3182|     77.69%
+                                        |        |        |
+n3392                                   |       2|    2894|     70.65%
+                                        |        |        |
+n5281                                   |       1|    2240|     54.69%
+                                        |        |        |
+n50                                     |       1|    1814|     44.29%
+                                        |        |        |
+n6681                                   |       3|    1180|     28.81%
+                                        |        |        |
+n5312                                   |       1|    1120|     27.34%
+                                        |        |        |
+n5303                                   |       1|    1088|     26.56%
+                                        |        |        |
+n5437                                   |       1|    1088|     26.56%
+                                        |        |        |
+n3390                                   |       2|    1050|     25.63%
+                                        |        |        |
+n6682                                   |       3|    1012|     24.71%
+                                        |        |        |
+n48                                     |       1|     910|     22.22%
+                                        |        |        |
+n44                                     |       1|     456|     11.13%
+                                        |        |        |
+n42                                     |       1|     452|     11.04%
+                                        |        |        |
+n40                                     |       1|     432|     10.55%
+                                        |        |        |
+n45                                     |       1|     432|     10.55%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 4096  Score: 35960057
+
+Constraints cover  7406 paths, 484 nets, and 1465 connections (95.4% coverage)
+
+
+Peak memory: 71348224 bytes, TRCE: 6651904 bytes, DLYMAN: 163840 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

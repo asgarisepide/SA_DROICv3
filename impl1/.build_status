@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="2" update_time="1698275614"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1698275633"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1698275644"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1698275567">
+            <Task name="Map" build_result="2" update_result="0" update_time="1698275567"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1698275575"/>
+            <Task name="MapVerilogSimFile" build_result="2" update_result="0" update_time="1698275585"/>
+            <Task name="MapVHDLSimFile" build_result="2" update_result="0" update_time="1698275594"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1698275613">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1698275613"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1698275622"/>
+            <Task name="IOTiming" build_result="0" update_result="2" update_time="1698275613"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1698275549">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1698275549"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1698275644"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1698275536"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1698275536"/>
+            <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/Helloworld_impl1_map.vdb" last_build_time="0" last_build_size="0"/>
+        <Report name=".vdbs/helloworld1_impl1_map.vdb" last_build_time="1698275567" last_build_size="85399"/>
+        <Report name=".vdbs/test_MS_impl1_map.vdb" last_build_time="1683921093" last_build_size="87458"/>
+        <Report name="Helloworld_impl1.bgn" last_build_time="1659218243" last_build_size="4293"/>
+        <Report name="Helloworld_impl1.bit" last_build_time="1659218241" last_build_size="25387"/>
+        <Report name="Helloworld_impl1.ior" last_build_time="1670980955" last_build_size="1819"/>
+        <Report name="Helloworld_impl1.jed" last_build_time="1659218243" last_build_size="1464701"/>
+        <Report name="Helloworld_impl1.lsedata" last_build_time="0" last_build_size="0"/>
+        <Report name="Helloworld_impl1.ncd" last_build_time="1670980953" last_build_size="45267"/>
+        <Report name="Helloworld_impl1.ngd" last_build_time="0" last_build_size="0"/>
+        <Report name="Helloworld_impl1.tw1" last_build_time="1670980934" last_build_size="7112"/>
+        <Report name="Helloworld_impl1.twr" last_build_time="1670980953" last_build_size="7427"/>
+        <Report name="Helloworld_impl1_map.ncd" last_build_time="1670980932" last_build_size="38714"/>
+        <Report name="IBIS/helloworld1_impl1.ibs" last_build_time="1698261362" last_build_size="174501"/>
+        <Report name="helloworld1_impl1.bgn" last_build_time="1698275644" last_build_size="4373"/>
+        <Report name="helloworld1_impl1.bit" last_build_time="1698275633" last_build_size="10171"/>
+        <Report name="helloworld1_impl1.ior" last_build_time="1697319933" last_build_size="5210"/>
+        <Report name="helloworld1_impl1.jed" last_build_time="1698275644" last_build_size="352109"/>
+        <Report name="helloworld1_impl1.lsedata" last_build_time="1698275539" last_build_size="421246"/>
+        <Report name="helloworld1_impl1.ncd" last_build_time="1698275613" last_build_size="385783"/>
+        <Report name="helloworld1_impl1.ngd" last_build_time="1698275549" last_build_size="290773"/>
+        <Report name="helloworld1_impl1.tw1" last_build_time="1698275575" last_build_size="10584"/>
+        <Report name="helloworld1_impl1.twr" last_build_time="1698275622" last_build_size="55641"/>
+        <Report name="helloworld1_impl1_map.ncd" last_build_time="1698275558" last_build_size="275751"/>
+        <Report name="helloworld1_impl1_mapvho.sdf" last_build_time="1698275594" last_build_size="223401"/>
+        <Report name="helloworld1_impl1_mapvho.vho" last_build_time="1698275594" last_build_size="1593050"/>
+        <Report name="helloworld1_impl1_mapvo.sdf" last_build_time="1698275585" last_build_size="220795"/>
+        <Report name="helloworld1_impl1_mapvo.vo" last_build_time="1698275585" last_build_size="238346"/>
+        <Report name="test_MS_impl1.bgn" last_build_time="1683921161" last_build_size="4356"/>
+        <Report name="test_MS_impl1.bit" last_build_time="1683921150" last_build_size="29027"/>
+        <Report name="test_MS_impl1.ior" last_build_time="1683921139" last_build_size="5263"/>
+        <Report name="test_MS_impl1.jed" last_build_time="1683921161" last_build_size="1466544"/>
+        <Report name="test_MS_impl1.lsedata" last_build_time="0" last_build_size="0"/>
+        <Report name="test_MS_impl1.ncd" last_build_time="1683921121" last_build_size="378023"/>
+        <Report name="test_MS_impl1.ngd" last_build_time="0" last_build_size="0"/>
+        <Report name="test_MS_impl1.tw1" last_build_time="1683921102" last_build_size="10534"/>
+        <Report name="test_MS_impl1.twr" last_build_time="1683921130" last_build_size="55469"/>
+        <Report name="test_MS_impl1_map.ncd" last_build_time="1683921085" last_build_size="268604"/>
+    </Strategy>
+</BuildStatus>
+                            

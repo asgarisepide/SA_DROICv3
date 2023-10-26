@@ -1,0 +1,31 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  76 of 964 (7.884%)
+I/O cells:      74
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        38          100.0
+                            EHXPLLJ         1          100.0
+                            FD1P3AX        11          100.0
+                            FD1P3IX        15          100.0
+                            FD1S3AX        42          100.0
+                            FD1S3IX         7          100.0
+                            FD1S3JX         1          100.0
+                                GSR         1          100.0
+                                 IB         3          100.0
+                                INV         1          100.0
+                            L6MUX21         2          100.0
+                               LUT4       327          100.0
+                                 OB        71          100.0
+                              PFUMX        39          100.0
+SUB MODULES
+                               pll1         1
+                              TOTAL       560
+----------------------------------------------------------------------
+Report for cell pll1.v1
+Instance Path : p
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            EHXPLLJ         1          100.0
+                                INV         1          100.0
+                              TOTAL         2

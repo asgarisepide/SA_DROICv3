@@ -1,0 +1,734 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE type=text/css>
+<!--
+.blink {text-decoration:blink}
+.ms  {font-size: 9pt; font-family: monospace; font-weight: normal}
+.msb {font-size: 9pt; font-family: monospace; font-weight: bold  }
+-->
+</STYLE>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY><B>
+</B>
+<BR><PRE><A name="Report Header"></A>
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
+Fri Aug 25 17:46:01 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design file:     top
+Device,speed:    LCMXO2-640UHC,5
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+
+
+</A><A name="FREQUENCY NET 'OSC_in_c' 50.000000 MH"></A>================================================================================
+Preference: FREQUENCY NET "OSC_in_c" 50.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+</A><A name="FREQUENCY NET 'clk_out1' 16.666667 MH"></A>================================================================================
+Preference: FREQUENCY NET "clk_out1" 16.666667 MHz ;
+            10 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+<font color=#000000> 
+
+Passed: The following path meets requirements by 40.523ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_64">count_i14</A>  (from <A href="#@net:clk_out1">clk_out1</A> -)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_69">count_i23</A>  (to <A href="#@net:clk_out1">clk_out1</A> -)
+
+   Delay:              19.327ns  (28.9% logic, 71.1% route), 12 logic levels.
+
+ Constraint Details:
+
+     19.327ns physical path delay SLICE_64 to SLICE_69 meets
+     60.000ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 59.850ns) by 40.523ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:REG_DEL, 0.409,R9C11A.CLK,R9C11A.Q1,SLICE_64:ROUTE, 2.597,R9C11A.Q1,R4C10C.A0,count_14:CTOF_DEL, 0.452,R4C10C.A0,R4C10C.F0,SLICE_179:ROUTE, 0.541,R4C10C.F0,R4C9D.D0,n44:CTOF_DEL, 0.452,R4C9D.D0,R4C9D.F0,SLICE_147:ROUTE, 0.851,R4C9D.F0,R4C10D.A0,n48:CTOF_DEL, 0.452,R4C10D.A0,R4C10D.F0,SLICE_146:ROUTE, 0.656,R4C10D.F0,R4C9A.C0,n50:CTOF_DEL, 0.452,R4C9A.C0,R4C9A.F0,SLICE_145:ROUTE, 1.331,R4C9A.F0,R5C12C.A1,n3392:CTOF_DEL, 0.452,R5C12C.A1,R5C12C.F1,SLICE_138:ROUTE, 0.908,R5C12C.F1,R5C14D.A0,n3389:CTOF_DEL, 0.452,R5C14D.A0,R5C14D.F0,SLICE_149:ROUTE, 0.399,R5C14D.F0,R5C14C.C1,n6681:CTOOFX_DEL, 0.661,R5C14C.C1,R5C14C.OFX0,i3294/SLICE_104:ROUTE, 1.149,R5C14C.OFX0,R5C11A.A1,n5281:CTOF_DEL, 0.452,R5C11A.A1,R5C11A.F1,SLICE_175:ROUTE, 1.143,R5C11A.F1,R8C13D.C1,n33:CTOF_DEL, 0.452,R8C13D.C1,R8C13D.F1,SLICE_133:ROUTE, 3.013,R8C13D.F1,R10C8D.B0,n19:CTOF_DEL, 0.452,R10C8D.B0,R10C8D.F0,SLICE_185:ROUTE, 1.149,R10C8D.F0,R9C10A.A0,n20_adj_699:CTOF_DEL, 0.452,R9C10A.A0,R9C10A.F0,SLICE_69:ROUTE, 0.000,R9C10A.F0,R9C10A.DI0,count_31_N_8_23">Data path</A> SLICE_64 to SLICE_69:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409     R9C11A.CLK to      R9C11A.Q1 <A href="#@comp:SLICE_64">SLICE_64</A> (from <A href="#@net:clk_out1">clk_out1</A>)
+ROUTE         5     2.597<A href="#@net:count_14:R9C11A.Q1:R4C10C.A0:2.597">      R9C11A.Q1 to R4C10C.A0     </A> <A href="#@net:count_14">count_14</A>
+CTOF_DEL    ---     0.452      R4C10C.A0 to      R4C10C.F0 <A href="#@comp:SLICE_179">SLICE_179</A>
+ROUTE         1     0.541<A href="#@net:n44:R4C10C.F0:R4C9D.D0:0.541">      R4C10C.F0 to R4C9D.D0      </A> <A href="#@net:n44">n44</A>
+CTOF_DEL    ---     0.452       R4C9D.D0 to       R4C9D.F0 <A href="#@comp:SLICE_147">SLICE_147</A>
+ROUTE         1     0.851<A href="#@net:n48:R4C9D.F0:R4C10D.A0:0.851">       R4C9D.F0 to R4C10D.A0     </A> <A href="#@net:n48">n48</A>
+CTOF_DEL    ---     0.452      R4C10D.A0 to      R4C10D.F0 <A href="#@comp:SLICE_146">SLICE_146</A>
+ROUTE         1     0.656<A href="#@net:n50:R4C10D.F0:R4C9A.C0:0.656">      R4C10D.F0 to R4C9A.C0      </A> <A href="#@net:n50">n50</A>
+CTOF_DEL    ---     0.452       R4C9A.C0 to       R4C9A.F0 <A href="#@comp:SLICE_145">SLICE_145</A>
+ROUTE         2     1.331<A href="#@net:n3392:R4C9A.F0:R5C12C.A1:1.331">       R4C9A.F0 to R5C12C.A1     </A> <A href="#@net:n3392">n3392</A>
+CTOF_DEL    ---     0.452      R5C12C.A1 to      R5C12C.F1 <A href="#@comp:SLICE_138">SLICE_138</A>
+ROUTE         7     0.908<A href="#@net:n3389:R5C12C.F1:R5C14D.A0:0.908">      R5C12C.F1 to R5C14D.A0     </A> <A href="#@net:n3389">n3389</A>
+CTOF_DEL    ---     0.452      R5C14D.A0 to      R5C14D.F0 <A href="#@comp:SLICE_149">SLICE_149</A>
+ROUTE         3     0.399<A href="#@net:n6681:R5C14D.F0:R5C14C.C1:0.399">      R5C14D.F0 to R5C14C.C1     </A> <A href="#@net:n6681">n6681</A>
+CTOOFX_DEL  ---     0.661      R5C14C.C1 to    R5C14C.OFX0 <A href="#@comp:i3294/SLICE_104">i3294/SLICE_104</A>
+ROUTE         1     1.149<A href="#@net:n5281:R5C14C.OFX0:R5C11A.A1:1.149">    R5C14C.OFX0 to R5C11A.A1     </A> <A href="#@net:n5281">n5281</A>
+CTOF_DEL    ---     0.452      R5C11A.A1 to      R5C11A.F1 <A href="#@comp:SLICE_175">SLICE_175</A>
+ROUTE         1     1.143<A href="#@net:n33:R5C11A.F1:R8C13D.C1:1.143">      R5C11A.F1 to R8C13D.C1     </A> <A href="#@net:n33">n33</A>
+CTOF_DEL    ---     0.452      R8C13D.C1 to      R8C13D.F1 <A href="#@comp:SLICE_133">SLICE_133</A>
+ROUTE        32     3.013<A href="#@net:n19:R8C13D.F1:R10C8D.B0:3.013">      R8C13D.F1 to R10C8D.B0     </A> <A href="#@net:n19">n19</A>
+CTOF_DEL    ---     0.452      R10C8D.B0 to      R10C8D.F0 <A href="#@comp:SLICE_185">SLICE_185</A>
+ROUTE         1     1.149<A href="#@net:n20_adj_699:R10C8D.F0:R9C10A.A0:1.149">      R10C8D.F0 to R9C10A.A0     </A> <A href="#@net:n20_adj_699">n20_adj_699</A>
+CTOF_DEL    ---     0.452      R9C10A.A0 to      R9C10A.F0 <A href="#@comp:SLICE_69">SLICE_69</A>
+ROUTE         1     0.000<A href="#@net:count_31_N_8_23:R9C10A.F0:R9C10A.DI0:0.000">      R9C10A.F0 to R9C10A.DI0    </A> <A href="#@net:count_31_N_8_23">count_31_N_8_23</A> (to <A href="#@net:clk_out1">clk_out1</A>)
+                  --------
+                   19.327   (28.9% logic, 71.1% route), 12 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R9C11A.CLK,clk_out1">Source Clock Path</A> p/PLLInst_0 to SLICE_64:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R9C11A.CLK:1.496">     LPLL.CLKOP to R9C11A.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R9C10A.CLK,clk_out1">Destination Clock Path</A> p/PLLInst_0 to SLICE_69:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R9C10A.CLK:1.496">     LPLL.CLKOP to R9C10A.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 40.538ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_64">count_i14</A>  (from <A href="#@net:clk_out1">clk_out1</A> -)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_69">count_i23</A>  (to <A href="#@net:clk_out1">clk_out1</A> -)
+
+   Delay:              19.312ns  (28.9% logic, 71.1% route), 12 logic levels.
+
+ Constraint Details:
+
+     19.312ns physical path delay SLICE_64 to SLICE_69 meets
+     60.000ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 59.850ns) by 40.538ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:REG_DEL, 0.409,R9C11A.CLK,R9C11A.Q1,SLICE_64:ROUTE, 2.597,R9C11A.Q1,R4C10C.A0,count_14:CTOF_DEL, 0.452,R4C10C.A0,R4C10C.F0,SLICE_179:ROUTE, 0.541,R4C10C.F0,R4C9D.D0,n44:CTOF_DEL, 0.452,R4C9D.D0,R4C9D.F0,SLICE_147:ROUTE, 0.851,R4C9D.F0,R4C10D.A0,n48:CTOF_DEL, 0.452,R4C10D.A0,R4C10D.F0,SLICE_146:ROUTE, 0.656,R4C10D.F0,R4C9A.C0,n50:CTOF_DEL, 0.452,R4C9A.C0,R4C9A.F0,SLICE_145:ROUTE, 1.331,R4C9A.F0,R5C12C.A1,n3392:CTOF_DEL, 0.452,R5C12C.A1,R5C12C.F1,SLICE_138:ROUTE, 0.406,R5C12C.F1,R5C12C.C0,n3389:CTOF_DEL, 0.452,R5C12C.C0,R5C12C.F0,SLICE_138:ROUTE, 0.886,R5C12C.F0,R5C14C.A0,n6682:CTOOFX_DEL, 0.661,R5C14C.A0,R5C14C.OFX0,i3294/SLICE_104:ROUTE, 1.149,R5C14C.OFX0,R5C11A.A1,n5281:CTOF_DEL, 0.452,R5C11A.A1,R5C11A.F1,SLICE_175:ROUTE, 1.143,R5C11A.F1,R8C13D.C1,n33:CTOF_DEL, 0.452,R8C13D.C1,R8C13D.F1,SLICE_133:ROUTE, 3.013,R8C13D.F1,R10C8D.B0,n19:CTOF_DEL, 0.452,R10C8D.B0,R10C8D.F0,SLICE_185:ROUTE, 1.149,R10C8D.F0,R9C10A.A0,n20_adj_699:CTOF_DEL, 0.452,R9C10A.A0,R9C10A.F0,SLICE_69:ROUTE, 0.000,R9C10A.F0,R9C10A.DI0,count_31_N_8_23">Data path</A> SLICE_64 to SLICE_69:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409     R9C11A.CLK to      R9C11A.Q1 <A href="#@comp:SLICE_64">SLICE_64</A> (from <A href="#@net:clk_out1">clk_out1</A>)
+ROUTE         5     2.597<A href="#@net:count_14:R9C11A.Q1:R4C10C.A0:2.597">      R9C11A.Q1 to R4C10C.A0     </A> <A href="#@net:count_14">count_14</A>
+CTOF_DEL    ---     0.452      R4C10C.A0 to      R4C10C.F0 <A href="#@comp:SLICE_179">SLICE_179</A>
+ROUTE         1     0.541<A href="#@net:n44:R4C10C.F0:R4C9D.D0:0.541">      R4C10C.F0 to R4C9D.D0      </A> <A href="#@net:n44">n44</A>
+CTOF_DEL    ---     0.452       R4C9D.D0 to       R4C9D.F0 <A href="#@comp:SLICE_147">SLICE_147</A>
+ROUTE         1     0.851<A href="#@net:n48:R4C9D.F0:R4C10D.A0:0.851">       R4C9D.F0 to R4C10D.A0     </A> <A href="#@net:n48">n48</A>
+CTOF_DEL    ---     0.452      R4C10D.A0 to      R4C10D.F0 <A href="#@comp:SLICE_146">SLICE_146</A>
+ROUTE         1     0.656<A href="#@net:n50:R4C10D.F0:R4C9A.C0:0.656">      R4C10D.F0 to R4C9A.C0      </A> <A href="#@net:n50">n50</A>
+CTOF_DEL    ---     0.452       R4C9A.C0 to       R4C9A.F0 <A href="#@comp:SLICE_145">SLICE_145</A>
+ROUTE         2     1.331<A href="#@net:n3392:R4C9A.F0:R5C12C.A1:1.331">       R4C9A.F0 to R5C12C.A1     </A> <A href="#@net:n3392">n3392</A>
+CTOF_DEL    ---     0.452      R5C12C.A1 to      R5C12C.F1 <A href="#@comp:SLICE_138">SLICE_138</A>
+ROUTE         7     0.406<A href="#@net:n3389:R5C12C.F1:R5C12C.C0:0.406">      R5C12C.F1 to R5C12C.C0     </A> <A href="#@net:n3389">n3389</A>
+CTOF_DEL    ---     0.452      R5C12C.C0 to      R5C12C.F0 <A href="#@comp:SLICE_138">SLICE_138</A>
+ROUTE         3     0.886<A href="#@net:n6682:R5C12C.F0:R5C14C.A0:0.886">      R5C12C.F0 to R5C14C.A0     </A> <A href="#@net:n6682">n6682</A>
+CTOOFX_DEL  ---     0.661      R5C14C.A0 to    R5C14C.OFX0 <A href="#@comp:i3294/SLICE_104">i3294/SLICE_104</A>
+ROUTE         1     1.149<A href="#@net:n5281:R5C14C.OFX0:R5C11A.A1:1.149">    R5C14C.OFX0 to R5C11A.A1     </A> <A href="#@net:n5281">n5281</A>
+CTOF_DEL    ---     0.452      R5C11A.A1 to      R5C11A.F1 <A href="#@comp:SLICE_175">SLICE_175</A>
+ROUTE         1     1.143<A href="#@net:n33:R5C11A.F1:R8C13D.C1:1.143">      R5C11A.F1 to R8C13D.C1     </A> <A href="#@net:n33">n33</A>
+CTOF_DEL    ---     0.452      R8C13D.C1 to      R8C13D.F1 <A href="#@comp:SLICE_133">SLICE_133</A>
+ROUTE        32     3.013<A href="#@net:n19:R8C13D.F1:R10C8D.B0:3.013">      R8C13D.F1 to R10C8D.B0     </A> <A href="#@net:n19">n19</A>
+CTOF_DEL    ---     0.452      R10C8D.B0 to      R10C8D.F0 <A href="#@comp:SLICE_185">SLICE_185</A>
+ROUTE         1     1.149<A href="#@net:n20_adj_699:R10C8D.F0:R9C10A.A0:1.149">      R10C8D.F0 to R9C10A.A0     </A> <A href="#@net:n20_adj_699">n20_adj_699</A>
+CTOF_DEL    ---     0.452      R9C10A.A0 to      R9C10A.F0 <A href="#@comp:SLICE_69">SLICE_69</A>
+ROUTE         1     0.000<A href="#@net:count_31_N_8_23:R9C10A.F0:R9C10A.DI0:0.000">      R9C10A.F0 to R9C10A.DI0    </A> <A href="#@net:count_31_N_8_23">count_31_N_8_23</A> (to <A href="#@net:clk_out1">clk_out1</A>)
+                  --------
+                   19.312   (28.9% logic, 71.1% route), 12 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R9C11A.CLK,clk_out1">Source Clock Path</A> p/PLLInst_0 to SLICE_64:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R9C11A.CLK:1.496">     LPLL.CLKOP to R9C11A.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R9C10A.CLK,clk_out1">Destination Clock Path</A> p/PLLInst_0 to SLICE_69:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R9C10A.CLK:1.496">     LPLL.CLKOP to R9C10A.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 40.933ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_64">count_i14</A>  (from <A href="#@net:clk_out1">clk_out1</A> -)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_65">count_i15</A>  (to <A href="#@net:clk_out1">clk_out1</A> -)
+
+   Delay:              18.917ns  (29.6% logic, 70.4% route), 12 logic levels.
+
+ Constraint Details:
+
+     18.917ns physical path delay SLICE_64 to SLICE_65 meets
+     60.000ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 59.850ns) by 40.933ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:REG_DEL, 0.409,R9C11A.CLK,R9C11A.Q1,SLICE_64:ROUTE, 2.597,R9C11A.Q1,R4C10C.A0,count_14:CTOF_DEL, 0.452,R4C10C.A0,R4C10C.F0,SLICE_179:ROUTE, 0.541,R4C10C.F0,R4C9D.D0,n44:CTOF_DEL, 0.452,R4C9D.D0,R4C9D.F0,SLICE_147:ROUTE, 0.851,R4C9D.F0,R4C10D.A0,n48:CTOF_DEL, 0.452,R4C10D.A0,R4C10D.F0,SLICE_146:ROUTE, 0.656,R4C10D.F0,R4C9A.C0,n50:CTOF_DEL, 0.452,R4C9A.C0,R4C9A.F0,SLICE_145:ROUTE, 1.331,R4C9A.F0,R5C12C.A1,n3392:CTOF_DEL, 0.452,R5C12C.A1,R5C12C.F1,SLICE_138:ROUTE, 0.908,R5C12C.F1,R5C14D.A0,n3389:CTOF_DEL, 0.452,R5C14D.A0,R5C14D.F0,SLICE_149:ROUTE, 0.399,R5C14D.F0,R5C14C.C1,n6681:CTOOFX_DEL, 0.661,R5C14C.C1,R5C14C.OFX0,i3294/SLICE_104:ROUTE, 1.149,R5C14C.OFX0,R5C11A.A1,n5281:CTOF_DEL, 0.452,R5C11A.A1,R5C11A.F1,SLICE_175:ROUTE, 1.143,R5C11A.F1,R8C13D.C1,n33:CTOF_DEL, 0.452,R8C13D.C1,R8C13D.F1,SLICE_133:ROUTE, 3.368,R8C13D.F1,R10C9B.A0,n19:CTOF_DEL, 0.452,R10C9B.A0,R10C9B.F0,SLICE_193:ROUTE, 0.384,R10C9B.F0,R10C9D.C0,n20_adj_592:CTOF_DEL, 0.452,R10C9D.C0,R10C9D.F0,SLICE_65:ROUTE, 0.000,R10C9D.F0,R10C9D.DI0,count_31_N_8_15">Data path</A> SLICE_64 to SLICE_65:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409     R9C11A.CLK to      R9C11A.Q1 <A href="#@comp:SLICE_64">SLICE_64</A> (from <A href="#@net:clk_out1">clk_out1</A>)
+ROUTE         5     2.597<A href="#@net:count_14:R9C11A.Q1:R4C10C.A0:2.597">      R9C11A.Q1 to R4C10C.A0     </A> <A href="#@net:count_14">count_14</A>
+CTOF_DEL    ---     0.452      R4C10C.A0 to      R4C10C.F0 <A href="#@comp:SLICE_179">SLICE_179</A>
+ROUTE         1     0.541<A href="#@net:n44:R4C10C.F0:R4C9D.D0:0.541">      R4C10C.F0 to R4C9D.D0      </A> <A href="#@net:n44">n44</A>
+CTOF_DEL    ---     0.452       R4C9D.D0 to       R4C9D.F0 <A href="#@comp:SLICE_147">SLICE_147</A>
+ROUTE         1     0.851<A href="#@net:n48:R4C9D.F0:R4C10D.A0:0.851">       R4C9D.F0 to R4C10D.A0     </A> <A href="#@net:n48">n48</A>
+CTOF_DEL    ---     0.452      R4C10D.A0 to      R4C10D.F0 <A href="#@comp:SLICE_146">SLICE_146</A>
+ROUTE         1     0.656<A href="#@net:n50:R4C10D.F0:R4C9A.C0:0.656">      R4C10D.F0 to R4C9A.C0      </A> <A href="#@net:n50">n50</A>
+CTOF_DEL    ---     0.452       R4C9A.C0 to       R4C9A.F0 <A href="#@comp:SLICE_145">SLICE_145</A>
+ROUTE         2     1.331<A href="#@net:n3392:R4C9A.F0:R5C12C.A1:1.331">       R4C9A.F0 to R5C12C.A1     </A> <A href="#@net:n3392">n3392</A>
+CTOF_DEL    ---     0.452      R5C12C.A1 to      R5C12C.F1 <A href="#@comp:SLICE_138">SLICE_138</A>
+ROUTE         7     0.908<A href="#@net:n3389:R5C12C.F1:R5C14D.A0:0.908">      R5C12C.F1 to R5C14D.A0     </A> <A href="#@net:n3389">n3389</A>
+CTOF_DEL    ---     0.452      R5C14D.A0 to      R5C14D.F0 <A href="#@comp:SLICE_149">SLICE_149</A>
+ROUTE         3     0.399<A href="#@net:n6681:R5C14D.F0:R5C14C.C1:0.399">      R5C14D.F0 to R5C14C.C1     </A> <A href="#@net:n6681">n6681</A>
+CTOOFX_DEL  ---     0.661      R5C14C.C1 to    R5C14C.OFX0 <A href="#@comp:i3294/SLICE_104">i3294/SLICE_104</A>
+ROUTE         1     1.149<A href="#@net:n5281:R5C14C.OFX0:R5C11A.A1:1.149">    R5C14C.OFX0 to R5C11A.A1     </A> <A href="#@net:n5281">n5281</A>
+CTOF_DEL    ---     0.452      R5C11A.A1 to      R5C11A.F1 <A href="#@comp:SLICE_175">SLICE_175</A>
+ROUTE         1     1.143<A href="#@net:n33:R5C11A.F1:R8C13D.C1:1.143">      R5C11A.F1 to R8C13D.C1     </A> <A href="#@net:n33">n33</A>
+CTOF_DEL    ---     0.452      R8C13D.C1 to      R8C13D.F1 <A href="#@comp:SLICE_133">SLICE_133</A>
+ROUTE        32     3.368<A href="#@net:n19:R8C13D.F1:R10C9B.A0:3.368">      R8C13D.F1 to R10C9B.A0     </A> <A href="#@net:n19">n19</A>
+CTOF_DEL    ---     0.452      R10C9B.A0 to      R10C9B.F0 <A href="#@comp:SLICE_193">SLICE_193</A>
+ROUTE         1     0.384<A href="#@net:n20_adj_592:R10C9B.F0:R10C9D.C0:0.384">      R10C9B.F0 to R10C9D.C0     </A> <A href="#@net:n20_adj_592">n20_adj_592</A>
+CTOF_DEL    ---     0.452      R10C9D.C0 to      R10C9D.F0 <A href="#@comp:SLICE_65">SLICE_65</A>
+ROUTE         1     0.000<A href="#@net:count_31_N_8_15:R10C9D.F0:R10C9D.DI0:0.000">      R10C9D.F0 to R10C9D.DI0    </A> <A href="#@net:count_31_N_8_15">count_31_N_8_15</A> (to <A href="#@net:clk_out1">clk_out1</A>)
+                  --------
+                   18.917   (29.6% logic, 70.4% route), 12 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R9C11A.CLK,clk_out1">Source Clock Path</A> p/PLLInst_0 to SLICE_64:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R9C11A.CLK:1.496">     LPLL.CLKOP to R9C11A.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R10C9D.CLK,clk_out1">Destination Clock Path</A> p/PLLInst_0 to SLICE_65:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R10C9D.CLK:1.496">     LPLL.CLKOP to R10C9D.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 40.948ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_64">count_i14</A>  (from <A href="#@net:clk_out1">clk_out1</A> -)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_65">count_i15</A>  (to <A href="#@net:clk_out1">clk_out1</A> -)
+
+   Delay:              18.902ns  (29.6% logic, 70.4% route), 12 logic levels.
+
+ Constraint Details:
+
+     18.902ns physical path delay SLICE_64 to SLICE_65 meets
+     60.000ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 59.850ns) by 40.948ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:REG_DEL, 0.409,R9C11A.CLK,R9C11A.Q1,SLICE_64:ROUTE, 2.597,R9C11A.Q1,R4C10C.A0,count_14:CTOF_DEL, 0.452,R4C10C.A0,R4C10C.F0,SLICE_179:ROUTE, 0.541,R4C10C.F0,R4C9D.D0,n44:CTOF_DEL, 0.452,R4C9D.D0,R4C9D.F0,SLICE_147:ROUTE, 0.851,R4C9D.F0,R4C10D.A0,n48:CTOF_DEL, 0.452,R4C10D.A0,R4C10D.F0,SLICE_146:ROUTE, 0.656,R4C10D.F0,R4C9A.C0,n50:CTOF_DEL, 0.452,R4C9A.C0,R4C9A.F0,SLICE_145:ROUTE, 1.331,R4C9A.F0,R5C12C.A1,n3392:CTOF_DEL, 0.452,R5C12C.A1,R5C12C.F1,SLICE_138:ROUTE, 0.406,R5C12C.F1,R5C12C.C0,n3389:CTOF_DEL, 0.452,R5C12C.C0,R5C12C.F0,SLICE_138:ROUTE, 0.886,R5C12C.F0,R5C14C.A0,n6682:CTOOFX_DEL, 0.661,R5C14C.A0,R5C14C.OFX0,i3294/SLICE_104:ROUTE, 1.149,R5C14C.OFX0,R5C11A.A1,n5281:CTOF_DEL, 0.452,R5C11A.A1,R5C11A.F1,SLICE_175:ROUTE, 1.143,R5C11A.F1,R8C13D.C1,n33:CTOF_DEL, 0.452,R8C13D.C1,R8C13D.F1,SLICE_133:ROUTE, 3.368,R8C13D.F1,R10C9B.A0,n19:CTOF_DEL, 0.452,R10C9B.A0,R10C9B.F0,SLICE_193:ROUTE, 0.384,R10C9B.F0,R10C9D.C0,n20_adj_592:CTOF_DEL, 0.452,R10C9D.C0,R10C9D.F0,SLICE_65:ROUTE, 0.000,R10C9D.F0,R10C9D.DI0,count_31_N_8_15">Data path</A> SLICE_64 to SLICE_65:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409     R9C11A.CLK to      R9C11A.Q1 <A href="#@comp:SLICE_64">SLICE_64</A> (from <A href="#@net:clk_out1">clk_out1</A>)
+ROUTE         5     2.597<A href="#@net:count_14:R9C11A.Q1:R4C10C.A0:2.597">      R9C11A.Q1 to R4C10C.A0     </A> <A href="#@net:count_14">count_14</A>
+CTOF_DEL    ---     0.452      R4C10C.A0 to      R4C10C.F0 <A href="#@comp:SLICE_179">SLICE_179</A>
+ROUTE         1     0.541<A href="#@net:n44:R4C10C.F0:R4C9D.D0:0.541">      R4C10C.F0 to R4C9D.D0      </A> <A href="#@net:n44">n44</A>
+CTOF_DEL    ---     0.452       R4C9D.D0 to       R4C9D.F0 <A href="#@comp:SLICE_147">SLICE_147</A>
+ROUTE         1     0.851<A href="#@net:n48:R4C9D.F0:R4C10D.A0:0.851">       R4C9D.F0 to R4C10D.A0     </A> <A href="#@net:n48">n48</A>
+CTOF_DEL    ---     0.452      R4C10D.A0 to      R4C10D.F0 <A href="#@comp:SLICE_146">SLICE_146</A>
+ROUTE         1     0.656<A href="#@net:n50:R4C10D.F0:R4C9A.C0:0.656">      R4C10D.F0 to R4C9A.C0      </A> <A href="#@net:n50">n50</A>
+CTOF_DEL    ---     0.452       R4C9A.C0 to       R4C9A.F0 <A href="#@comp:SLICE_145">SLICE_145</A>
+ROUTE         2     1.331<A href="#@net:n3392:R4C9A.F0:R5C12C.A1:1.331">       R4C9A.F0 to R5C12C.A1     </A> <A href="#@net:n3392">n3392</A>
+CTOF_DEL    ---     0.452      R5C12C.A1 to      R5C12C.F1 <A href="#@comp:SLICE_138">SLICE_138</A>
+ROUTE         7     0.406<A href="#@net:n3389:R5C12C.F1:R5C12C.C0:0.406">      R5C12C.F1 to R5C12C.C0     </A> <A href="#@net:n3389">n3389</A>
+CTOF_DEL    ---     0.452      R5C12C.C0 to      R5C12C.F0 <A href="#@comp:SLICE_138">SLICE_138</A>
+ROUTE         3     0.886<A href="#@net:n6682:R5C12C.F0:R5C14C.A0:0.886">      R5C12C.F0 to R5C14C.A0     </A> <A href="#@net:n6682">n6682</A>
+CTOOFX_DEL  ---     0.661      R5C14C.A0 to    R5C14C.OFX0 <A href="#@comp:i3294/SLICE_104">i3294/SLICE_104</A>
+ROUTE         1     1.149<A href="#@net:n5281:R5C14C.OFX0:R5C11A.A1:1.149">    R5C14C.OFX0 to R5C11A.A1     </A> <A href="#@net:n5281">n5281</A>
+CTOF_DEL    ---     0.452      R5C11A.A1 to      R5C11A.F1 <A href="#@comp:SLICE_175">SLICE_175</A>
+ROUTE         1     1.143<A href="#@net:n33:R5C11A.F1:R8C13D.C1:1.143">      R5C11A.F1 to R8C13D.C1     </A> <A href="#@net:n33">n33</A>
+CTOF_DEL    ---     0.452      R8C13D.C1 to      R8C13D.F1 <A href="#@comp:SLICE_133">SLICE_133</A>
+ROUTE        32     3.368<A href="#@net:n19:R8C13D.F1:R10C9B.A0:3.368">      R8C13D.F1 to R10C9B.A0     </A> <A href="#@net:n19">n19</A>
+CTOF_DEL    ---     0.452      R10C9B.A0 to      R10C9B.F0 <A href="#@comp:SLICE_193">SLICE_193</A>
+ROUTE         1     0.384<A href="#@net:n20_adj_592:R10C9B.F0:R10C9D.C0:0.384">      R10C9B.F0 to R10C9D.C0     </A> <A href="#@net:n20_adj_592">n20_adj_592</A>
+CTOF_DEL    ---     0.452      R10C9D.C0 to      R10C9D.F0 <A href="#@comp:SLICE_65">SLICE_65</A>
+ROUTE         1     0.000<A href="#@net:count_31_N_8_15:R10C9D.F0:R10C9D.DI0:0.000">      R10C9D.F0 to R10C9D.DI0    </A> <A href="#@net:count_31_N_8_15">count_31_N_8_15</A> (to <A href="#@net:clk_out1">clk_out1</A>)
+                  --------
+                   18.902   (29.6% logic, 70.4% route), 12 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R9C11A.CLK,clk_out1">Source Clock Path</A> p/PLLInst_0 to SLICE_64:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R9C11A.CLK:1.496">     LPLL.CLKOP to R9C11A.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R10C9D.CLK,clk_out1">Destination Clock Path</A> p/PLLInst_0 to SLICE_65:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R10C9D.CLK:1.496">     LPLL.CLKOP to R10C9D.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 41.013ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_64">count_i14</A>  (from <A href="#@net:clk_out1">clk_out1</A> -)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_83">count_i9</A>  (to <A href="#@net:clk_out1">clk_out1</A> -)
+
+   Delay:              18.837ns  (29.7% logic, 70.3% route), 12 logic levels.
+
+ Constraint Details:
+
+     18.837ns physical path delay SLICE_64 to SLICE_83 meets
+     60.000ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 59.850ns) by 41.013ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:REG_DEL, 0.409,R9C11A.CLK,R9C11A.Q1,SLICE_64:ROUTE, 2.597,R9C11A.Q1,R4C10C.A0,count_14:CTOF_DEL, 0.452,R4C10C.A0,R4C10C.F0,SLICE_179:ROUTE, 0.541,R4C10C.F0,R4C9D.D0,n44:CTOF_DEL, 0.452,R4C9D.D0,R4C9D.F0,SLICE_147:ROUTE, 0.851,R4C9D.F0,R4C10D.A0,n48:CTOF_DEL, 0.452,R4C10D.A0,R4C10D.F0,SLICE_146:ROUTE, 0.656,R4C10D.F0,R4C9A.C0,n50:CTOF_DEL, 0.452,R4C9A.C0,R4C9A.F0,SLICE_145:ROUTE, 1.331,R4C9A.F0,R5C12C.A1,n3392:CTOF_DEL, 0.452,R5C12C.A1,R5C12C.F1,SLICE_138:ROUTE, 0.908,R5C12C.F1,R5C14D.A0,n3389:CTOF_DEL, 0.452,R5C14D.A0,R5C14D.F0,SLICE_149:ROUTE, 0.399,R5C14D.F0,R5C14C.C1,n6681:CTOOFX_DEL, 0.661,R5C14C.C1,R5C14C.OFX0,i3294/SLICE_104:ROUTE, 1.149,R5C14C.OFX0,R5C11A.A1,n5281:CTOF_DEL, 0.452,R5C11A.A1,R5C11A.F1,SLICE_175:ROUTE, 1.143,R5C11A.F1,R8C13D.C1,n33:CTOF_DEL, 0.452,R8C13D.C1,R8C13D.F1,SLICE_133:ROUTE, 3.013,R8C13D.F1,R10C8D.B1,n19:CTOF_DEL, 0.452,R10C8D.B1,R10C8D.F1,SLICE_185:ROUTE, 0.659,R10C8D.F1,R10C8A.C0,n20_adj_581:CTOF_DEL, 0.452,R10C8A.C0,R10C8A.F0,SLICE_83:ROUTE, 0.000,R10C8A.F0,R10C8A.DI0,count_31_N_8_9">Data path</A> SLICE_64 to SLICE_83:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409     R9C11A.CLK to      R9C11A.Q1 <A href="#@comp:SLICE_64">SLICE_64</A> (from <A href="#@net:clk_out1">clk_out1</A>)
+ROUTE         5     2.597<A href="#@net:count_14:R9C11A.Q1:R4C10C.A0:2.597">      R9C11A.Q1 to R4C10C.A0     </A> <A href="#@net:count_14">count_14</A>
+CTOF_DEL    ---     0.452      R4C10C.A0 to      R4C10C.F0 <A href="#@comp:SLICE_179">SLICE_179</A>
+ROUTE         1     0.541<A href="#@net:n44:R4C10C.F0:R4C9D.D0:0.541">      R4C10C.F0 to R4C9D.D0      </A> <A href="#@net:n44">n44</A>
+CTOF_DEL    ---     0.452       R4C9D.D0 to       R4C9D.F0 <A href="#@comp:SLICE_147">SLICE_147</A>
+ROUTE         1     0.851<A href="#@net:n48:R4C9D.F0:R4C10D.A0:0.851">       R4C9D.F0 to R4C10D.A0     </A> <A href="#@net:n48">n48</A>
+CTOF_DEL    ---     0.452      R4C10D.A0 to      R4C10D.F0 <A href="#@comp:SLICE_146">SLICE_146</A>
+ROUTE         1     0.656<A href="#@net:n50:R4C10D.F0:R4C9A.C0:0.656">      R4C10D.F0 to R4C9A.C0      </A> <A href="#@net:n50">n50</A>
+CTOF_DEL    ---     0.452       R4C9A.C0 to       R4C9A.F0 <A href="#@comp:SLICE_145">SLICE_145</A>
+ROUTE         2     1.331<A href="#@net:n3392:R4C9A.F0:R5C12C.A1:1.331">       R4C9A.F0 to R5C12C.A1     </A> <A href="#@net:n3392">n3392</A>
+CTOF_DEL    ---     0.452      R5C12C.A1 to      R5C12C.F1 <A href="#@comp:SLICE_138">SLICE_138</A>
+ROUTE         7     0.908<A href="#@net:n3389:R5C12C.F1:R5C14D.A0:0.908">      R5C12C.F1 to R5C14D.A0     </A> <A href="#@net:n3389">n3389</A>
+CTOF_DEL    ---     0.452      R5C14D.A0 to      R5C14D.F0 <A href="#@comp:SLICE_149">SLICE_149</A>
+ROUTE         3     0.399<A href="#@net:n6681:R5C14D.F0:R5C14C.C1:0.399">      R5C14D.F0 to R5C14C.C1     </A> <A href="#@net:n6681">n6681</A>
+CTOOFX_DEL  ---     0.661      R5C14C.C1 to    R5C14C.OFX0 <A href="#@comp:i3294/SLICE_104">i3294/SLICE_104</A>
+ROUTE         1     1.149<A href="#@net:n5281:R5C14C.OFX0:R5C11A.A1:1.149">    R5C14C.OFX0 to R5C11A.A1     </A> <A href="#@net:n5281">n5281</A>
+CTOF_DEL    ---     0.452      R5C11A.A1 to      R5C11A.F1 <A href="#@comp:SLICE_175">SLICE_175</A>
+ROUTE         1     1.143<A href="#@net:n33:R5C11A.F1:R8C13D.C1:1.143">      R5C11A.F1 to R8C13D.C1     </A> <A href="#@net:n33">n33</A>
+CTOF_DEL    ---     0.452      R8C13D.C1 to      R8C13D.F1 <A href="#@comp:SLICE_133">SLICE_133</A>
+ROUTE        32     3.013<A href="#@net:n19:R8C13D.F1:R10C8D.B1:3.013">      R8C13D.F1 to R10C8D.B1     </A> <A href="#@net:n19">n19</A>
+CTOF_DEL    ---     0.452      R10C8D.B1 to      R10C8D.F1 <A href="#@comp:SLICE_185">SLICE_185</A>
+ROUTE         1     0.659<A href="#@net:n20_adj_581:R10C8D.F1:R10C8A.C0:0.659">      R10C8D.F1 to R10C8A.C0     </A> <A href="#@net:n20_adj_581">n20_adj_581</A>
+CTOF_DEL    ---     0.452      R10C8A.C0 to      R10C8A.F0 <A href="#@comp:SLICE_83">SLICE_83</A>
+ROUTE         1     0.000<A href="#@net:count_31_N_8_9:R10C8A.F0:R10C8A.DI0:0.000">      R10C8A.F0 to R10C8A.DI0    </A> <A href="#@net:count_31_N_8_9">count_31_N_8_9</A> (to <A href="#@net:clk_out1">clk_out1</A>)
+                  --------
+                   18.837   (29.7% logic, 70.3% route), 12 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R9C11A.CLK,clk_out1">Source Clock Path</A> p/PLLInst_0 to SLICE_64:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R9C11A.CLK:1.496">     LPLL.CLKOP to R9C11A.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R10C8A.CLK,clk_out1">Destination Clock Path</A> p/PLLInst_0 to SLICE_83:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R10C8A.CLK:1.496">     LPLL.CLKOP to R10C8A.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 41.028ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_64">count_i14</A>  (from <A href="#@net:clk_out1">clk_out1</A> -)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_83">count_i9</A>  (to <A href="#@net:clk_out1">clk_out1</A> -)
+
+   Delay:              18.822ns  (29.7% logic, 70.3% route), 12 logic levels.
+
+ Constraint Details:
+
+     18.822ns physical path delay SLICE_64 to SLICE_83 meets
+     60.000ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 59.850ns) by 41.028ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:REG_DEL, 0.409,R9C11A.CLK,R9C11A.Q1,SLICE_64:ROUTE, 2.597,R9C11A.Q1,R4C10C.A0,count_14:CTOF_DEL, 0.452,R4C10C.A0,R4C10C.F0,SLICE_179:ROUTE, 0.541,R4C10C.F0,R4C9D.D0,n44:CTOF_DEL, 0.452,R4C9D.D0,R4C9D.F0,SLICE_147:ROUTE, 0.851,R4C9D.F0,R4C10D.A0,n48:CTOF_DEL, 0.452,R4C10D.A0,R4C10D.F0,SLICE_146:ROUTE, 0.656,R4C10D.F0,R4C9A.C0,n50:CTOF_DEL, 0.452,R4C9A.C0,R4C9A.F0,SLICE_145:ROUTE, 1.331,R4C9A.F0,R5C12C.A1,n3392:CTOF_DEL, 0.452,R5C12C.A1,R5C12C.F1,SLICE_138:ROUTE, 0.406,R5C12C.F1,R5C12C.C0,n3389:CTOF_DEL, 0.452,R5C12C.C0,R5C12C.F0,SLICE_138:ROUTE, 0.886,R5C12C.F0,R5C14C.A0,n6682:CTOOFX_DEL, 0.661,R5C14C.A0,R5C14C.OFX0,i3294/SLICE_104:ROUTE, 1.149,R5C14C.OFX0,R5C11A.A1,n5281:CTOF_DEL, 0.452,R5C11A.A1,R5C11A.F1,SLICE_175:ROUTE, 1.143,R5C11A.F1,R8C13D.C1,n33:CTOF_DEL, 0.452,R8C13D.C1,R8C13D.F1,SLICE_133:ROUTE, 3.013,R8C13D.F1,R10C8D.B1,n19:CTOF_DEL, 0.452,R10C8D.B1,R10C8D.F1,SLICE_185:ROUTE, 0.659,R10C8D.F1,R10C8A.C0,n20_adj_581:CTOF_DEL, 0.452,R10C8A.C0,R10C8A.F0,SLICE_83:ROUTE, 0.000,R10C8A.F0,R10C8A.DI0,count_31_N_8_9">Data path</A> SLICE_64 to SLICE_83:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409     R9C11A.CLK to      R9C11A.Q1 <A href="#@comp:SLICE_64">SLICE_64</A> (from <A href="#@net:clk_out1">clk_out1</A>)
+ROUTE         5     2.597<A href="#@net:count_14:R9C11A.Q1:R4C10C.A0:2.597">      R9C11A.Q1 to R4C10C.A0     </A> <A href="#@net:count_14">count_14</A>
+CTOF_DEL    ---     0.452      R4C10C.A0 to      R4C10C.F0 <A href="#@comp:SLICE_179">SLICE_179</A>
+ROUTE         1     0.541<A href="#@net:n44:R4C10C.F0:R4C9D.D0:0.541">      R4C10C.F0 to R4C9D.D0      </A> <A href="#@net:n44">n44</A>
+CTOF_DEL    ---     0.452       R4C9D.D0 to       R4C9D.F0 <A href="#@comp:SLICE_147">SLICE_147</A>
+ROUTE         1     0.851<A href="#@net:n48:R4C9D.F0:R4C10D.A0:0.851">       R4C9D.F0 to R4C10D.A0     </A> <A href="#@net:n48">n48</A>
+CTOF_DEL    ---     0.452      R4C10D.A0 to      R4C10D.F0 <A href="#@comp:SLICE_146">SLICE_146</A>
+ROUTE         1     0.656<A href="#@net:n50:R4C10D.F0:R4C9A.C0:0.656">      R4C10D.F0 to R4C9A.C0      </A> <A href="#@net:n50">n50</A>
+CTOF_DEL    ---     0.452       R4C9A.C0 to       R4C9A.F0 <A href="#@comp:SLICE_145">SLICE_145</A>
+ROUTE         2     1.331<A href="#@net:n3392:R4C9A.F0:R5C12C.A1:1.331">       R4C9A.F0 to R5C12C.A1     </A> <A href="#@net:n3392">n3392</A>
+CTOF_DEL    ---     0.452      R5C12C.A1 to      R5C12C.F1 <A href="#@comp:SLICE_138">SLICE_138</A>
+ROUTE         7     0.406<A href="#@net:n3389:R5C12C.F1:R5C12C.C0:0.406">      R5C12C.F1 to R5C12C.C0     </A> <A href="#@net:n3389">n3389</A>
+CTOF_DEL    ---     0.452      R5C12C.C0 to      R5C12C.F0 <A href="#@comp:SLICE_138">SLICE_138</A>
+ROUTE         3     0.886<A href="#@net:n6682:R5C12C.F0:R5C14C.A0:0.886">      R5C12C.F0 to R5C14C.A0     </A> <A href="#@net:n6682">n6682</A>
+CTOOFX_DEL  ---     0.661      R5C14C.A0 to    R5C14C.OFX0 <A href="#@comp:i3294/SLICE_104">i3294/SLICE_104</A>
+ROUTE         1     1.149<A href="#@net:n5281:R5C14C.OFX0:R5C11A.A1:1.149">    R5C14C.OFX0 to R5C11A.A1     </A> <A href="#@net:n5281">n5281</A>
+CTOF_DEL    ---     0.452      R5C11A.A1 to      R5C11A.F1 <A href="#@comp:SLICE_175">SLICE_175</A>
+ROUTE         1     1.143<A href="#@net:n33:R5C11A.F1:R8C13D.C1:1.143">      R5C11A.F1 to R8C13D.C1     </A> <A href="#@net:n33">n33</A>
+CTOF_DEL    ---     0.452      R8C13D.C1 to      R8C13D.F1 <A href="#@comp:SLICE_133">SLICE_133</A>
+ROUTE        32     3.013<A href="#@net:n19:R8C13D.F1:R10C8D.B1:3.013">      R8C13D.F1 to R10C8D.B1     </A> <A href="#@net:n19">n19</A>
+CTOF_DEL    ---     0.452      R10C8D.B1 to      R10C8D.F1 <A href="#@comp:SLICE_185">SLICE_185</A>
+ROUTE         1     0.659<A href="#@net:n20_adj_581:R10C8D.F1:R10C8A.C0:0.659">      R10C8D.F1 to R10C8A.C0     </A> <A href="#@net:n20_adj_581">n20_adj_581</A>
+CTOF_DEL    ---     0.452      R10C8A.C0 to      R10C8A.F0 <A href="#@comp:SLICE_83">SLICE_83</A>
+ROUTE         1     0.000<A href="#@net:count_31_N_8_9:R10C8A.F0:R10C8A.DI0:0.000">      R10C8A.F0 to R10C8A.DI0    </A> <A href="#@net:count_31_N_8_9">count_31_N_8_9</A> (to <A href="#@net:clk_out1">clk_out1</A>)
+                  --------
+                   18.822   (29.7% logic, 70.3% route), 12 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R9C11A.CLK,clk_out1">Source Clock Path</A> p/PLLInst_0 to SLICE_64:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R9C11A.CLK:1.496">     LPLL.CLKOP to R9C11A.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R10C8A.CLK,clk_out1">Destination Clock Path</A> p/PLLInst_0 to SLICE_83:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R10C8A.CLK:1.496">     LPLL.CLKOP to R10C8A.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 41.038ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_64">count_i14</A>  (from <A href="#@net:clk_out1">clk_out1</A> -)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_69">count_i23</A>  (to <A href="#@net:clk_out1">clk_out1</A> -)
+
+   Delay:              18.812ns  (28.6% logic, 71.4% route), 12 logic levels.
+
+ Constraint Details:
+
+     18.812ns physical path delay SLICE_64 to SLICE_69 meets
+     60.000ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 59.850ns) by 41.038ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:REG_DEL, 0.409,R9C11A.CLK,R9C11A.Q1,SLICE_64:ROUTE, 2.597,R9C11A.Q1,R4C10C.A0,count_14:CTOF_DEL, 0.452,R4C10C.A0,R4C10C.F0,SLICE_179:ROUTE, 0.541,R4C10C.F0,R4C9D.D0,n44:CTOF_DEL, 0.452,R4C9D.D0,R4C9D.F0,SLICE_147:ROUTE, 0.851,R4C9D.F0,R4C10D.A0,n48:CTOF_DEL, 0.452,R4C10D.A0,R4C10D.F0,SLICE_146:ROUTE, 0.656,R4C10D.F0,R4C9A.C0,n50:CTOF_DEL, 0.452,R4C9A.C0,R4C9A.F0,SLICE_145:ROUTE, 1.331,R4C9A.F0,R5C12C.A1,n3392:CTOF_DEL, 0.452,R5C12C.A1,R5C12C.F1,SLICE_138:ROUTE, 0.681,R5C12C.F1,R5C12A.C0,n3389:CTOF_DEL, 0.452,R5C12A.C0,R5C12A.F0,SLICE_148:ROUTE, 0.587,R5C12A.F0,R5C12A.A1,n3390:CTOF_DEL, 0.452,R5C12A.A1,R5C12A.F1,SLICE_148:ROUTE, 0.882,R5C12A.F1,R5C11A.B1,n5437:CTOF_DEL, 0.452,R5C11A.B1,R5C11A.F1,SLICE_175:ROUTE, 1.143,R5C11A.F1,R8C13D.C1,n33:CTOF_DEL, 0.452,R8C13D.C1,R8C13D.F1,SLICE_133:ROUTE, 3.013,R8C13D.F1,R10C8D.B0,n19:CTOF_DEL, 0.452,R10C8D.B0,R10C8D.F0,SLICE_185:ROUTE, 1.149,R10C8D.F0,R9C10A.A0,n20_adj_699:CTOF_DEL, 0.452,R9C10A.A0,R9C10A.F0,SLICE_69:ROUTE, 0.000,R9C10A.F0,R9C10A.DI0,count_31_N_8_23">Data path</A> SLICE_64 to SLICE_69:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409     R9C11A.CLK to      R9C11A.Q1 <A href="#@comp:SLICE_64">SLICE_64</A> (from <A href="#@net:clk_out1">clk_out1</A>)
+ROUTE         5     2.597<A href="#@net:count_14:R9C11A.Q1:R4C10C.A0:2.597">      R9C11A.Q1 to R4C10C.A0     </A> <A href="#@net:count_14">count_14</A>
+CTOF_DEL    ---     0.452      R4C10C.A0 to      R4C10C.F0 <A href="#@comp:SLICE_179">SLICE_179</A>
+ROUTE         1     0.541<A href="#@net:n44:R4C10C.F0:R4C9D.D0:0.541">      R4C10C.F0 to R4C9D.D0      </A> <A href="#@net:n44">n44</A>
+CTOF_DEL    ---     0.452       R4C9D.D0 to       R4C9D.F0 <A href="#@comp:SLICE_147">SLICE_147</A>
+ROUTE         1     0.851<A href="#@net:n48:R4C9D.F0:R4C10D.A0:0.851">       R4C9D.F0 to R4C10D.A0     </A> <A href="#@net:n48">n48</A>
+CTOF_DEL    ---     0.452      R4C10D.A0 to      R4C10D.F0 <A href="#@comp:SLICE_146">SLICE_146</A>
+ROUTE         1     0.656<A href="#@net:n50:R4C10D.F0:R4C9A.C0:0.656">      R4C10D.F0 to R4C9A.C0      </A> <A href="#@net:n50">n50</A>
+CTOF_DEL    ---     0.452       R4C9A.C0 to       R4C9A.F0 <A href="#@comp:SLICE_145">SLICE_145</A>
+ROUTE         2     1.331<A href="#@net:n3392:R4C9A.F0:R5C12C.A1:1.331">       R4C9A.F0 to R5C12C.A1     </A> <A href="#@net:n3392">n3392</A>
+CTOF_DEL    ---     0.452      R5C12C.A1 to      R5C12C.F1 <A href="#@comp:SLICE_138">SLICE_138</A>
+ROUTE         7     0.681<A href="#@net:n3389:R5C12C.F1:R5C12A.C0:0.681">      R5C12C.F1 to R5C12A.C0     </A> <A href="#@net:n3389">n3389</A>
+CTOF_DEL    ---     0.452      R5C12A.C0 to      R5C12A.F0 <A href="#@comp:SLICE_148">SLICE_148</A>
+ROUTE         2     0.587<A href="#@net:n3390:R5C12A.F0:R5C12A.A1:0.587">      R5C12A.F0 to R5C12A.A1     </A> <A href="#@net:n3390">n3390</A>
+CTOF_DEL    ---     0.452      R5C12A.A1 to      R5C12A.F1 <A href="#@comp:SLICE_148">SLICE_148</A>
+ROUTE         1     0.882<A href="#@net:n5437:R5C12A.F1:R5C11A.B1:0.882">      R5C12A.F1 to R5C11A.B1     </A> <A href="#@net:n5437">n5437</A>
+CTOF_DEL    ---     0.452      R5C11A.B1 to      R5C11A.F1 <A href="#@comp:SLICE_175">SLICE_175</A>
+ROUTE         1     1.143<A href="#@net:n33:R5C11A.F1:R8C13D.C1:1.143">      R5C11A.F1 to R8C13D.C1     </A> <A href="#@net:n33">n33</A>
+CTOF_DEL    ---     0.452      R8C13D.C1 to      R8C13D.F1 <A href="#@comp:SLICE_133">SLICE_133</A>
+ROUTE        32     3.013<A href="#@net:n19:R8C13D.F1:R10C8D.B0:3.013">      R8C13D.F1 to R10C8D.B0     </A> <A href="#@net:n19">n19</A>
+CTOF_DEL    ---     0.452      R10C8D.B0 to      R10C8D.F0 <A href="#@comp:SLICE_185">SLICE_185</A>
+ROUTE         1     1.149<A href="#@net:n20_adj_699:R10C8D.F0:R9C10A.A0:1.149">      R10C8D.F0 to R9C10A.A0     </A> <A href="#@net:n20_adj_699">n20_adj_699</A>
+CTOF_DEL    ---     0.452      R9C10A.A0 to      R9C10A.F0 <A href="#@comp:SLICE_69">SLICE_69</A>
+ROUTE         1     0.000<A href="#@net:count_31_N_8_23:R9C10A.F0:R9C10A.DI0:0.000">      R9C10A.F0 to R9C10A.DI0    </A> <A href="#@net:count_31_N_8_23">count_31_N_8_23</A> (to <A href="#@net:clk_out1">clk_out1</A>)
+                  --------
+                   18.812   (28.6% logic, 71.4% route), 12 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R9C11A.CLK,clk_out1">Source Clock Path</A> p/PLLInst_0 to SLICE_64:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R9C11A.CLK:1.496">     LPLL.CLKOP to R9C11A.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R9C10A.CLK,clk_out1">Destination Clock Path</A> p/PLLInst_0 to SLICE_69:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R9C10A.CLK:1.496">     LPLL.CLKOP to R9C10A.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 41.048ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_64">count_i14</A>  (from <A href="#@net:clk_out1">clk_out1</A> -)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_68">count_i21</A>  (to <A href="#@net:clk_out1">clk_out1</A> -)
+
+   Delay:              18.802ns  (29.7% logic, 70.3% route), 12 logic levels.
+
+ Constraint Details:
+
+     18.802ns physical path delay SLICE_64 to SLICE_68 meets
+     60.000ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 59.850ns) by 41.048ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:REG_DEL, 0.409,R9C11A.CLK,R9C11A.Q1,SLICE_64:ROUTE, 2.597,R9C11A.Q1,R4C10C.A0,count_14:CTOF_DEL, 0.452,R4C10C.A0,R4C10C.F0,SLICE_179:ROUTE, 0.541,R4C10C.F0,R4C9D.D0,n44:CTOF_DEL, 0.452,R4C9D.D0,R4C9D.F0,SLICE_147:ROUTE, 0.851,R4C9D.F0,R4C10D.A0,n48:CTOF_DEL, 0.452,R4C10D.A0,R4C10D.F0,SLICE_146:ROUTE, 0.656,R4C10D.F0,R4C9A.C0,n50:CTOF_DEL, 0.452,R4C9A.C0,R4C9A.F0,SLICE_145:ROUTE, 1.331,R4C9A.F0,R5C12C.A1,n3392:CTOF_DEL, 0.452,R5C12C.A1,R5C12C.F1,SLICE_138:ROUTE, 0.908,R5C12C.F1,R5C14D.A0,n3389:CTOF_DEL, 0.452,R5C14D.A0,R5C14D.F0,SLICE_149:ROUTE, 0.399,R5C14D.F0,R5C14C.C1,n6681:CTOOFX_DEL, 0.661,R5C14C.C1,R5C14C.OFX0,i3294/SLICE_104:ROUTE, 1.149,R5C14C.OFX0,R5C11A.A1,n5281:CTOF_DEL, 0.452,R5C11A.A1,R5C11A.F1,SLICE_175:ROUTE, 1.143,R5C11A.F1,R8C13D.C1,n33:CTOF_DEL, 0.452,R8C13D.C1,R8C13D.F1,SLICE_133:ROUTE, 3.368,R8C13D.F1,R10C9B.A1,n19:CTOF_DEL, 0.452,R10C9B.A1,R10C9B.F1,SLICE_193:ROUTE, 0.269,R10C9B.F1,R10C9A.D0,n20_adj_672:CTOF_DEL, 0.452,R10C9A.D0,R10C9A.F0,SLICE_68:ROUTE, 0.000,R10C9A.F0,R10C9A.DI0,count_31_N_8_21">Data path</A> SLICE_64 to SLICE_68:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409     R9C11A.CLK to      R9C11A.Q1 <A href="#@comp:SLICE_64">SLICE_64</A> (from <A href="#@net:clk_out1">clk_out1</A>)
+ROUTE         5     2.597<A href="#@net:count_14:R9C11A.Q1:R4C10C.A0:2.597">      R9C11A.Q1 to R4C10C.A0     </A> <A href="#@net:count_14">count_14</A>
+CTOF_DEL    ---     0.452      R4C10C.A0 to      R4C10C.F0 <A href="#@comp:SLICE_179">SLICE_179</A>
+ROUTE         1     0.541<A href="#@net:n44:R4C10C.F0:R4C9D.D0:0.541">      R4C10C.F0 to R4C9D.D0      </A> <A href="#@net:n44">n44</A>
+CTOF_DEL    ---     0.452       R4C9D.D0 to       R4C9D.F0 <A href="#@comp:SLICE_147">SLICE_147</A>
+ROUTE         1     0.851<A href="#@net:n48:R4C9D.F0:R4C10D.A0:0.851">       R4C9D.F0 to R4C10D.A0     </A> <A href="#@net:n48">n48</A>
+CTOF_DEL    ---     0.452      R4C10D.A0 to      R4C10D.F0 <A href="#@comp:SLICE_146">SLICE_146</A>
+ROUTE         1     0.656<A href="#@net:n50:R4C10D.F0:R4C9A.C0:0.656">      R4C10D.F0 to R4C9A.C0      </A> <A href="#@net:n50">n50</A>
+CTOF_DEL    ---     0.452       R4C9A.C0 to       R4C9A.F0 <A href="#@comp:SLICE_145">SLICE_145</A>
+ROUTE         2     1.331<A href="#@net:n3392:R4C9A.F0:R5C12C.A1:1.331">       R4C9A.F0 to R5C12C.A1     </A> <A href="#@net:n3392">n3392</A>
+CTOF_DEL    ---     0.452      R5C12C.A1 to      R5C12C.F1 <A href="#@comp:SLICE_138">SLICE_138</A>
+ROUTE         7     0.908<A href="#@net:n3389:R5C12C.F1:R5C14D.A0:0.908">      R5C12C.F1 to R5C14D.A0     </A> <A href="#@net:n3389">n3389</A>
+CTOF_DEL    ---     0.452      R5C14D.A0 to      R5C14D.F0 <A href="#@comp:SLICE_149">SLICE_149</A>
+ROUTE         3     0.399<A href="#@net:n6681:R5C14D.F0:R5C14C.C1:0.399">      R5C14D.F0 to R5C14C.C1     </A> <A href="#@net:n6681">n6681</A>
+CTOOFX_DEL  ---     0.661      R5C14C.C1 to    R5C14C.OFX0 <A href="#@comp:i3294/SLICE_104">i3294/SLICE_104</A>
+ROUTE         1     1.149<A href="#@net:n5281:R5C14C.OFX0:R5C11A.A1:1.149">    R5C14C.OFX0 to R5C11A.A1     </A> <A href="#@net:n5281">n5281</A>
+CTOF_DEL    ---     0.452      R5C11A.A1 to      R5C11A.F1 <A href="#@comp:SLICE_175">SLICE_175</A>
+ROUTE         1     1.143<A href="#@net:n33:R5C11A.F1:R8C13D.C1:1.143">      R5C11A.F1 to R8C13D.C1     </A> <A href="#@net:n33">n33</A>
+CTOF_DEL    ---     0.452      R8C13D.C1 to      R8C13D.F1 <A href="#@comp:SLICE_133">SLICE_133</A>
+ROUTE        32     3.368<A href="#@net:n19:R8C13D.F1:R10C9B.A1:3.368">      R8C13D.F1 to R10C9B.A1     </A> <A href="#@net:n19">n19</A>
+CTOF_DEL    ---     0.452      R10C9B.A1 to      R10C9B.F1 <A href="#@comp:SLICE_193">SLICE_193</A>
+ROUTE         1     0.269<A href="#@net:n20_adj_672:R10C9B.F1:R10C9A.D0:0.269">      R10C9B.F1 to R10C9A.D0     </A> <A href="#@net:n20_adj_672">n20_adj_672</A>
+CTOF_DEL    ---     0.452      R10C9A.D0 to      R10C9A.F0 <A href="#@comp:SLICE_68">SLICE_68</A>
+ROUTE         1     0.000<A href="#@net:count_31_N_8_21:R10C9A.F0:R10C9A.DI0:0.000">      R10C9A.F0 to R10C9A.DI0    </A> <A href="#@net:count_31_N_8_21">count_31_N_8_21</A> (to <A href="#@net:clk_out1">clk_out1</A>)
+                  --------
+                   18.802   (29.7% logic, 70.3% route), 12 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R9C11A.CLK,clk_out1">Source Clock Path</A> p/PLLInst_0 to SLICE_64:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R9C11A.CLK:1.496">     LPLL.CLKOP to R9C11A.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R10C9A.CLK,clk_out1">Destination Clock Path</A> p/PLLInst_0 to SLICE_68:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R10C9A.CLK:1.496">     LPLL.CLKOP to R10C9A.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 41.063ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_64">count_i14</A>  (from <A href="#@net:clk_out1">clk_out1</A> -)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_68">count_i21</A>  (to <A href="#@net:clk_out1">clk_out1</A> -)
+
+   Delay:              18.787ns  (29.8% logic, 70.2% route), 12 logic levels.
+
+ Constraint Details:
+
+     18.787ns physical path delay SLICE_64 to SLICE_68 meets
+     60.000ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 59.850ns) by 41.063ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:REG_DEL, 0.409,R9C11A.CLK,R9C11A.Q1,SLICE_64:ROUTE, 2.597,R9C11A.Q1,R4C10C.A0,count_14:CTOF_DEL, 0.452,R4C10C.A0,R4C10C.F0,SLICE_179:ROUTE, 0.541,R4C10C.F0,R4C9D.D0,n44:CTOF_DEL, 0.452,R4C9D.D0,R4C9D.F0,SLICE_147:ROUTE, 0.851,R4C9D.F0,R4C10D.A0,n48:CTOF_DEL, 0.452,R4C10D.A0,R4C10D.F0,SLICE_146:ROUTE, 0.656,R4C10D.F0,R4C9A.C0,n50:CTOF_DEL, 0.452,R4C9A.C0,R4C9A.F0,SLICE_145:ROUTE, 1.331,R4C9A.F0,R5C12C.A1,n3392:CTOF_DEL, 0.452,R5C12C.A1,R5C12C.F1,SLICE_138:ROUTE, 0.406,R5C12C.F1,R5C12C.C0,n3389:CTOF_DEL, 0.452,R5C12C.C0,R5C12C.F0,SLICE_138:ROUTE, 0.886,R5C12C.F0,R5C14C.A0,n6682:CTOOFX_DEL, 0.661,R5C14C.A0,R5C14C.OFX0,i3294/SLICE_104:ROUTE, 1.149,R5C14C.OFX0,R5C11A.A1,n5281:CTOF_DEL, 0.452,R5C11A.A1,R5C11A.F1,SLICE_175:ROUTE, 1.143,R5C11A.F1,R8C13D.C1,n33:CTOF_DEL, 0.452,R8C13D.C1,R8C13D.F1,SLICE_133:ROUTE, 3.368,R8C13D.F1,R10C9B.A1,n19:CTOF_DEL, 0.452,R10C9B.A1,R10C9B.F1,SLICE_193:ROUTE, 0.269,R10C9B.F1,R10C9A.D0,n20_adj_672:CTOF_DEL, 0.452,R10C9A.D0,R10C9A.F0,SLICE_68:ROUTE, 0.000,R10C9A.F0,R10C9A.DI0,count_31_N_8_21">Data path</A> SLICE_64 to SLICE_68:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409     R9C11A.CLK to      R9C11A.Q1 <A href="#@comp:SLICE_64">SLICE_64</A> (from <A href="#@net:clk_out1">clk_out1</A>)
+ROUTE         5     2.597<A href="#@net:count_14:R9C11A.Q1:R4C10C.A0:2.597">      R9C11A.Q1 to R4C10C.A0     </A> <A href="#@net:count_14">count_14</A>
+CTOF_DEL    ---     0.452      R4C10C.A0 to      R4C10C.F0 <A href="#@comp:SLICE_179">SLICE_179</A>
+ROUTE         1     0.541<A href="#@net:n44:R4C10C.F0:R4C9D.D0:0.541">      R4C10C.F0 to R4C9D.D0      </A> <A href="#@net:n44">n44</A>
+CTOF_DEL    ---     0.452       R4C9D.D0 to       R4C9D.F0 <A href="#@comp:SLICE_147">SLICE_147</A>
+ROUTE         1     0.851<A href="#@net:n48:R4C9D.F0:R4C10D.A0:0.851">       R4C9D.F0 to R4C10D.A0     </A> <A href="#@net:n48">n48</A>
+CTOF_DEL    ---     0.452      R4C10D.A0 to      R4C10D.F0 <A href="#@comp:SLICE_146">SLICE_146</A>
+ROUTE         1     0.656<A href="#@net:n50:R4C10D.F0:R4C9A.C0:0.656">      R4C10D.F0 to R4C9A.C0      </A> <A href="#@net:n50">n50</A>
+CTOF_DEL    ---     0.452       R4C9A.C0 to       R4C9A.F0 <A href="#@comp:SLICE_145">SLICE_145</A>
+ROUTE         2     1.331<A href="#@net:n3392:R4C9A.F0:R5C12C.A1:1.331">       R4C9A.F0 to R5C12C.A1     </A> <A href="#@net:n3392">n3392</A>
+CTOF_DEL    ---     0.452      R5C12C.A1 to      R5C12C.F1 <A href="#@comp:SLICE_138">SLICE_138</A>
+ROUTE         7     0.406<A href="#@net:n3389:R5C12C.F1:R5C12C.C0:0.406">      R5C12C.F1 to R5C12C.C0     </A> <A href="#@net:n3389">n3389</A>
+CTOF_DEL    ---     0.452      R5C12C.C0 to      R5C12C.F0 <A href="#@comp:SLICE_138">SLICE_138</A>
+ROUTE         3     0.886<A href="#@net:n6682:R5C12C.F0:R5C14C.A0:0.886">      R5C12C.F0 to R5C14C.A0     </A> <A href="#@net:n6682">n6682</A>
+CTOOFX_DEL  ---     0.661      R5C14C.A0 to    R5C14C.OFX0 <A href="#@comp:i3294/SLICE_104">i3294/SLICE_104</A>
+ROUTE         1     1.149<A href="#@net:n5281:R5C14C.OFX0:R5C11A.A1:1.149">    R5C14C.OFX0 to R5C11A.A1     </A> <A href="#@net:n5281">n5281</A>
+CTOF_DEL    ---     0.452      R5C11A.A1 to      R5C11A.F1 <A href="#@comp:SLICE_175">SLICE_175</A>
+ROUTE         1     1.143<A href="#@net:n33:R5C11A.F1:R8C13D.C1:1.143">      R5C11A.F1 to R8C13D.C1     </A> <A href="#@net:n33">n33</A>
+CTOF_DEL    ---     0.452      R8C13D.C1 to      R8C13D.F1 <A href="#@comp:SLICE_133">SLICE_133</A>
+ROUTE        32     3.368<A href="#@net:n19:R8C13D.F1:R10C9B.A1:3.368">      R8C13D.F1 to R10C9B.A1     </A> <A href="#@net:n19">n19</A>
+CTOF_DEL    ---     0.452      R10C9B.A1 to      R10C9B.F1 <A href="#@comp:SLICE_193">SLICE_193</A>
+ROUTE         1     0.269<A href="#@net:n20_adj_672:R10C9B.F1:R10C9A.D0:0.269">      R10C9B.F1 to R10C9A.D0     </A> <A href="#@net:n20_adj_672">n20_adj_672</A>
+CTOF_DEL    ---     0.452      R10C9A.D0 to      R10C9A.F0 <A href="#@comp:SLICE_68">SLICE_68</A>
+ROUTE         1     0.000<A href="#@net:count_31_N_8_21:R10C9A.F0:R10C9A.DI0:0.000">      R10C9A.F0 to R10C9A.DI0    </A> <A href="#@net:count_31_N_8_21">count_31_N_8_21</A> (to <A href="#@net:clk_out1">clk_out1</A>)
+                  --------
+                   18.787   (29.8% logic, 70.2% route), 12 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R9C11A.CLK,clk_out1">Source Clock Path</A> p/PLLInst_0 to SLICE_64:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R9C11A.CLK:1.496">     LPLL.CLKOP to R9C11A.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R10C9A.CLK,clk_out1">Destination Clock Path</A> p/PLLInst_0 to SLICE_68:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R10C9A.CLK:1.496">     LPLL.CLKOP to R10C9A.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 41.135ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_70">count_i25</A>  (from <A href="#@net:clk_out1">clk_out1</A> -)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_69">count_i23</A>  (to <A href="#@net:clk_out1">clk_out1</A> -)
+
+   Delay:              18.715ns  (29.9% logic, 70.1% route), 12 logic levels.
+
+ Constraint Details:
+
+     18.715ns physical path delay SLICE_70 to SLICE_69 meets
+     60.000ns delay constraint less
+      0.000ns skew and
+      0.150ns DIN_SET requirement (totaling 59.850ns) by 41.135ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:REG_DEL, 0.409,R7C11C.CLK,R7C11C.Q0,SLICE_70:ROUTE, 1.985,R7C11C.Q0,R4C10C.C0,count_25:CTOF_DEL, 0.452,R4C10C.C0,R4C10C.F0,SLICE_179:ROUTE, 0.541,R4C10C.F0,R4C9D.D0,n44:CTOF_DEL, 0.452,R4C9D.D0,R4C9D.F0,SLICE_147:ROUTE, 0.851,R4C9D.F0,R4C10D.A0,n48:CTOF_DEL, 0.452,R4C10D.A0,R4C10D.F0,SLICE_146:ROUTE, 0.656,R4C10D.F0,R4C9A.C0,n50:CTOF_DEL, 0.452,R4C9A.C0,R4C9A.F0,SLICE_145:ROUTE, 1.331,R4C9A.F0,R5C12C.A1,n3392:CTOF_DEL, 0.452,R5C12C.A1,R5C12C.F1,SLICE_138:ROUTE, 0.908,R5C12C.F1,R5C14D.A0,n3389:CTOF_DEL, 0.452,R5C14D.A0,R5C14D.F0,SLICE_149:ROUTE, 0.399,R5C14D.F0,R5C14C.C1,n6681:CTOOFX_DEL, 0.661,R5C14C.C1,R5C14C.OFX0,i3294/SLICE_104:ROUTE, 1.149,R5C14C.OFX0,R5C11A.A1,n5281:CTOF_DEL, 0.452,R5C11A.A1,R5C11A.F1,SLICE_175:ROUTE, 1.143,R5C11A.F1,R8C13D.C1,n33:CTOF_DEL, 0.452,R8C13D.C1,R8C13D.F1,SLICE_133:ROUTE, 3.013,R8C13D.F1,R10C8D.B0,n19:CTOF_DEL, 0.452,R10C8D.B0,R10C8D.F0,SLICE_185:ROUTE, 1.149,R10C8D.F0,R9C10A.A0,n20_adj_699:CTOF_DEL, 0.452,R9C10A.A0,R9C10A.F0,SLICE_69:ROUTE, 0.000,R9C10A.F0,R9C10A.DI0,count_31_N_8_23">Data path</A> SLICE_70 to SLICE_69:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409     R7C11C.CLK to      R7C11C.Q0 <A href="#@comp:SLICE_70">SLICE_70</A> (from <A href="#@net:clk_out1">clk_out1</A>)
+ROUTE         5     1.985<A href="#@net:count_25:R7C11C.Q0:R4C10C.C0:1.985">      R7C11C.Q0 to R4C10C.C0     </A> <A href="#@net:count_25">count_25</A>
+CTOF_DEL    ---     0.452      R4C10C.C0 to      R4C10C.F0 <A href="#@comp:SLICE_179">SLICE_179</A>
+ROUTE         1     0.541<A href="#@net:n44:R4C10C.F0:R4C9D.D0:0.541">      R4C10C.F0 to R4C9D.D0      </A> <A href="#@net:n44">n44</A>
+CTOF_DEL    ---     0.452       R4C9D.D0 to       R4C9D.F0 <A href="#@comp:SLICE_147">SLICE_147</A>
+ROUTE         1     0.851<A href="#@net:n48:R4C9D.F0:R4C10D.A0:0.851">       R4C9D.F0 to R4C10D.A0     </A> <A href="#@net:n48">n48</A>
+CTOF_DEL    ---     0.452      R4C10D.A0 to      R4C10D.F0 <A href="#@comp:SLICE_146">SLICE_146</A>
+ROUTE         1     0.656<A href="#@net:n50:R4C10D.F0:R4C9A.C0:0.656">      R4C10D.F0 to R4C9A.C0      </A> <A href="#@net:n50">n50</A>
+CTOF_DEL    ---     0.452       R4C9A.C0 to       R4C9A.F0 <A href="#@comp:SLICE_145">SLICE_145</A>
+ROUTE         2     1.331<A href="#@net:n3392:R4C9A.F0:R5C12C.A1:1.331">       R4C9A.F0 to R5C12C.A1     </A> <A href="#@net:n3392">n3392</A>
+CTOF_DEL    ---     0.452      R5C12C.A1 to      R5C12C.F1 <A href="#@comp:SLICE_138">SLICE_138</A>
+ROUTE         7     0.908<A href="#@net:n3389:R5C12C.F1:R5C14D.A0:0.908">      R5C12C.F1 to R5C14D.A0     </A> <A href="#@net:n3389">n3389</A>
+CTOF_DEL    ---     0.452      R5C14D.A0 to      R5C14D.F0 <A href="#@comp:SLICE_149">SLICE_149</A>
+ROUTE         3     0.399<A href="#@net:n6681:R5C14D.F0:R5C14C.C1:0.399">      R5C14D.F0 to R5C14C.C1     </A> <A href="#@net:n6681">n6681</A>
+CTOOFX_DEL  ---     0.661      R5C14C.C1 to    R5C14C.OFX0 <A href="#@comp:i3294/SLICE_104">i3294/SLICE_104</A>
+ROUTE         1     1.149<A href="#@net:n5281:R5C14C.OFX0:R5C11A.A1:1.149">    R5C14C.OFX0 to R5C11A.A1     </A> <A href="#@net:n5281">n5281</A>
+CTOF_DEL    ---     0.452      R5C11A.A1 to      R5C11A.F1 <A href="#@comp:SLICE_175">SLICE_175</A>
+ROUTE         1     1.143<A href="#@net:n33:R5C11A.F1:R8C13D.C1:1.143">      R5C11A.F1 to R8C13D.C1     </A> <A href="#@net:n33">n33</A>
+CTOF_DEL    ---     0.452      R8C13D.C1 to      R8C13D.F1 <A href="#@comp:SLICE_133">SLICE_133</A>
+ROUTE        32     3.013<A href="#@net:n19:R8C13D.F1:R10C8D.B0:3.013">      R8C13D.F1 to R10C8D.B0     </A> <A href="#@net:n19">n19</A>
+CTOF_DEL    ---     0.452      R10C8D.B0 to      R10C8D.F0 <A href="#@comp:SLICE_185">SLICE_185</A>
+ROUTE         1     1.149<A href="#@net:n20_adj_699:R10C8D.F0:R9C10A.A0:1.149">      R10C8D.F0 to R9C10A.A0     </A> <A href="#@net:n20_adj_699">n20_adj_699</A>
+CTOF_DEL    ---     0.452      R9C10A.A0 to      R9C10A.F0 <A href="#@comp:SLICE_69">SLICE_69</A>
+ROUTE         1     0.000<A href="#@net:count_31_N_8_23:R9C10A.F0:R9C10A.DI0:0.000">      R9C10A.F0 to R9C10A.DI0    </A> <A href="#@net:count_31_N_8_23">count_31_N_8_23</A> (to <A href="#@net:clk_out1">clk_out1</A>)
+                  --------
+                   18.715   (29.9% logic, 70.1% route), 12 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R7C11C.CLK,clk_out1">Source Clock Path</A> p/PLLInst_0 to SLICE_70:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R7C11C.CLK:1.496">     LPLL.CLKOP to R7C11C.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_out1' 16.666667 MHz ;:ROUTE, 1.496,LPLL.CLKOP,R9C10A.CLK,clk_out1">Destination Clock Path</A> p/PLLInst_0 to SLICE_69:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        55     1.496<A href="#@net:clk_out1:LPLL.CLKOP:R9C10A.CLK:1.496">     LPLL.CLKOP to R9C10A.CLK    </A> <A href="#@net:clk_out1">clk_out1</A>
+                  --------
+                    1.496   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report:   51.343MHz is the maximum frequency for this preference.
+
+<A name="Report Summary"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "OSC_in_c" 50.000000 MHz  |             |             |
+;                                       |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "clk_out1" 16.666667 MHz  |             |             |
+;                                       |   16.667 MHz|   51.343 MHz|  12  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="Clock Domains Analysis"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: <A href="#@net:clk_out1">clk_out1</A>   Source: p/PLLInst_0.CLKOP   Loads: 55
+   Covered under: FREQUENCY NET "clk_out1" 16.666667 MHz ;
+
+Clock Domain: <A href="#@net:OSC_in_c">OSC_in_c</A>   Source: OSC_in.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 7176 paths, 4 nets, and 1376 connections (95.29% coverage)
+

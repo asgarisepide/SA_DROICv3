@@ -1,0 +1,62 @@
+# Reading pref.tcl
+# do {C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/testCPLD/testCPLD.mdo}
+# Loading project testCPLD
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+# Start time: 17:43:41 on Sep 13,2023
+# vlog -reportprogress 300 "+incdir+C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead" -work work C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/pll1.v 
+# -- Compiling module pll1
+# 
+# Top level modules:
+# 	pll1
+# End time: 17:43:41 on Sep 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+# Start time: 17:43:41 on Sep 13,2023
+# vlog -reportprogress 300 "+incdir+C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead" -work work C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/top.v 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 17:43:41 on Sep 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+# Start time: 17:43:41 on Sep 13,2023
+# vlog -reportprogress 300 "+incdir+C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead" -work work C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/toptest.v 
+# -- Compiling module top
+# -- Compiling module toptest
+# 
+# Top level modules:
+# 	toptest
+# End time: 17:43:41 on Sep 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -L work -L pmi_work -L ovi_machxo2 toptest 
+# Start time: 17:43:41 on Sep 13,2023
+# //  ModelSim - Lattice FPGA Edition 2020.3 Oct 14 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Lattice FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.toptest
+# Loading work.top
+# Loading ovi_machxo2.OSCH
+# Loading work.pll1
+# Loading ovi_machxo2.VLO
+# Loading ovi_machxo2.EHXPLLJ
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 80, found 79.
+#    Time: 0 fs  Iteration: 0  Instance: /toptest/dut File: C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/toptest.v Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'rc_osc'.  Expected 3, found 2.
+#    Time: 0 fs  Iteration: 0  Instance: /toptest/dut/rc_osc File: C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/top.v Line: 35
+# ** Warning: (vsim-3722) C:/Users/Abel/Documents/CPLDOSCReadoutMultiRead/top.v(35): [TFMPC] - Missing connection for port 'SEDSTDBY'.
+# .main_pane.wave.interior.cs.body.pw.wf
+run
+run
+# End time: 17:58:17 on Sep 13,2023, Elapsed time: 0:14:36
+# Errors: 0, Warnings: 9
