@@ -2,25 +2,25 @@
 // S Asgari Oct 25 2023
 //
 module top(PhaseA1, Rst, Rst1, Rst2, PhaseC2, DebugP2, DebugP3, PhaseC1, PhaseC2, PhaseC3, PhaseC4, PhaseA2, PhaseA4, Sin1, Sin2, Sin3, Sin4, Sin5, Sin6, Sin7, Sin8, Sin9, Sin10, Sin11, Sin12, Sin14, Sin15, Sin16, Clk1, Clk2, Clk3, Clk4, RS1, RS2, RS3, RS4, RS5, RS6, RS7, RS8, ADMode_1, ADMode_2, ADMode_3,  ADMode1_1, ADMode1_2, ADMode1_3, ADRst1, ADRst2, ADRst3, ADClk1, ADClk2, ADClk3, ADSout1, ADSout2, ADSout3, ADSout4, ADSout5, ADSout6, ADSout7, ADSout8,AD0, AD1,ADSout15, Sout1,Sout2, Sout3,Sout4,ClkOut, DataOut, ResCS1, ResCS2, ResCS3, ResCS4,ResCS5, ResCS6, ResCS7, ResCS8, ResClk, ResSDI1, ResSDI2, OSC_in);
-	output reg PhaseA1, Rst, DebugP2, DebugP3, PhaseC1;
-	output wire PhaseC4, PhaseC2, PhaseC3;
-	output wire Rst1, Rst2; 
-	output reg Sin3; 
-	output reg Sin6;
-	output Sin5,Sin4,Sin2,Sin1, Sin7, Sin8, Sin9, Sin10, Sin11, Sin12, Sin14, Sin15, Sin16;
-	output wire PhaseA2, PhaseA4;
-	output reg RS1=0, RS2=0, RS3=0, RS4=0, RS5=0, RS6=0, RS7=0, RS8=0;
-	output wire ADRst1, ADRst2, ADRst3;
-	output wire ADMode_1, ADMode_2, ADMode_3, ADMode1_1, ADMode1_2, ADMode1_3;
-	output wire ADClk1, ADClk2, ADClk3;
-	output wire Sout1, Sout2, Sout3,Sout4;
-	input ADSout1, ADSout2, ADSout3, ADSout4, ADSout5, ADSout6, ADSout7, ADSout8,ADSout15;
-	input OSC_in;
-	output reg AD0,AD1;
-	reg ADMode, ADMode1;
-	reg ADRst;
-	reg ADClk;
-	output reg ClkOut, DataOut;
+	output reg   PhaseA1, Rst, DebugP2, DebugP3, PhaseC1;
+	output wire  PhaseC4, PhaseC2, PhaseC3;
+	output wire  Rst1, Rst2; 
+	output reg   Sin3; 
+	output reg   Sin6;
+	output       Sin5,Sin4,Sin2,Sin1, Sin7, Sin8, Sin9, Sin10, Sin11, Sin12, Sin14, Sin15, Sin16;
+	output wire  PhaseA2, PhaseA4;
+	output reg   RS1=0, RS2=0, RS3=0, RS4=0, RS5=0, RS6=0, RS7=0, RS8=0;
+	output wire  ADRst1, ADRst2, ADRst3;
+	output wire  ADMode_1, ADMode_2, ADMode_3, ADMode1_1, ADMode1_2, ADMode1_3;
+	output wire  ADClk1, ADClk2, ADClk3;
+	output wire  Sout1, Sout2, Sout3,Sout4;
+	input        ADSout1, ADSout2, ADSout3, ADSout4, ADSout5, ADSout6, ADSout7, ADSout8,ADSout15;
+	input        OSC_in;
+	output reg   AD0,AD1;
+	reg          ADMode, ADMode1;
+	reg          ADRst;
+	reg          ADClk;
+	output reg   ClkOut, DataOut;
 	
 	
 	
@@ -57,7 +57,7 @@ module top(PhaseA1, Rst, Rst1, Rst2, PhaseC2, DebugP2, DebugP3, PhaseC1, PhaseC2
 	//reg [ResDIV+1:0] ResStep;
 	reg [3:0] Resbitcount=0;
 	reg [3:0] ResCScount=0;
-	reg [2:0] CSnmbr=0;
+	reg [2:0] CSnmbr=0;   // Select different DACs
 	reg ResCS=0;
 	//reg [9:0] temp= 10'b0011001110;
 	//                       17  27  25
